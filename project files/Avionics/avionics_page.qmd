@@ -9,7 +9,7 @@ While working at a materials testing lab in Lockheed Martin, I was put in charge
 
 ![](avionics_pic.jpg)
 
-This was done by taking avionics connectors, treating them with different anodizing processes. Thesse were then put in fog testing chambers, one with salt fog and one with SO$_2$ fog, and then taken out. Corrosion was tested using conductivity to measure corrosion. I then took all of this information and put it into a techincal internal report.
+This was done by taking avionics connectors and treating them with different anodizing processes. These were then put in fog testing chambers, one with salt fog and one with SO$_2$ fog, and then taken out. Electrical conductivity was tested and used to measure corrosion. I then took all of this information and put it into a techincal internal report.
 
 ![](saltfog_pic.jpg)
 
