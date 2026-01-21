@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About Me – Zander Gonzales</title>
+<title>Effects of Anodizing on Avionics Connector Corrosion – Zander Gonzales</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8ed579b5fe325379d033d5f829beb7a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-cc1d64809b8ed731f92ea1275fe9f05b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,8 +69,37 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -80,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Zander Gonzales</span>
     </a>
   </div>
@@ -91,11 +120,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./AboutMe.html" aria-current="page"> 
+    <a class="nav-link" href="../../AboutMe.html"> 
 <span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Projects.html"> 
+    <a class="nav-link" href="../../Projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
 </ul>
@@ -121,9 +150,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#education" id="toc-education" class="nav-link active" data-scroll-target="#education">EDUCATION</a></li>
-  <li><a href="#work-experience" id="toc-work-experience" class="nav-link" data-scroll-target="#work-experience">WORK EXPERIENCE</a></li>
-  <li><a href="#skills-and-achievements" id="toc-skills-and-achievements" class="nav-link" data-scroll-target="#skills-and-achievements">SKILLS AND ACHIEVEMENTS</a></li>
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link active" data-scroll-target="#project-overview">Project Overview</a></li>
+  <li><a href="#skills-demonstrated" id="toc-skills-demonstrated" class="nav-link" data-scroll-target="#skills-demonstrated">Skills Demonstrated</a></li>
   </ul>
 </nav>
     </div>
@@ -132,7 +160,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About Me</h1>
+<h1 class="title">Effects of Anodizing on Avionics Connector Corrosion</h1>
+<p class="subtitle lead"><em>Owned by Lockheed Martin</em></p>
 </div>
 
 
@@ -149,73 +178,21 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Hi! I’m <strong>Zander Gonzales</strong>: problem solving engineer, student TA, and lover of 3D modeling. I am currently a Junior studying Mechanical Engineering at Brigham Young University. Hopefully you like my website!</p>
-<div data-layout-align="center">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="Professional Profile.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
-</figure>
-</div>
-</div>
-<section id="education" class="level2">
-<h2 class="anchored" data-anchor-id="education">EDUCATION</h2>
-<ul>
-<li><strong>Bachelor of Science:</strong> Mechanical Engineering, <em>Brigham Young University</em>
-<ul>
-<li>GPA 3.78</li>
-<li>Coursework: Computational Methods, Materials Science, Thermodynamics, Computer Aided Design, Dynamic Systems Modeling, Elements of Electrical Engineering</li>
-</ul></li>
-<li><strong>Minor in Philosophy:</strong> Focus in formal logic and epistemology</li>
-</ul>
+<section id="project-overview" class="level2">
+<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
+<p>While working at a materials testing lab in Lockheed Martin, I was put in charge of a project testing the effects of different anodizing processes on corrosion rate of avionics connectors.</p>
+<p><img src="avionics_pic.jpg" class="img-fluid"></p>
+<p>This was done by taking avionics connectors, treating them with different anodizing processes. Thesse were then put in fog testing chambers, one with salt fog and one with SO<span class="math inline">\(_2\)</span> fog, and then taken out. Corrosion was tested using conductivity to measure corrosion. I then took all of this information and put it into a techincal internal report.</p>
+<p><img src="saltfog_pic.jpg" class="img-fluid"></p>
 </section>
-<section id="work-experience" class="level2">
-<h2 class="anchored" data-anchor-id="work-experience">WORK EXPERIENCE</h2>
+<section id="skills-demonstrated" class="level2">
+<h2 class="anchored" data-anchor-id="skills-demonstrated">Skills Demonstrated</h2>
 <ul>
-<li><strong>Teaching Assistant - Computational Methods</strong>, <em>Brigham Young University</em> | Provo, Utah (April 2025 – Current)
-<ul>
-<li>Worked under two different professors, Dr.&nbsp;Steven Charles and Dr.&nbsp;Andrew Ning, as a TA helping both with labs and holding weekly office hours where I would work with individual students to help them understand and be able to execute assignments.</li>
-<li>Learned how to both teach and become extremely proficient in Python and Excel in order to numerically solve problems and use statistics to perform data analysis.</li>
-</ul></li>
-<li><strong>Intern - Lockheed Martin</strong>, <em>Materials Testing Lab</em> | Fort Worth, Texas (August 2020-August 2021)
-<ul>
-<li>Primarily worked with sealants and anodizing of aluminum alloys, where my roles consisted of working in the lab and collecting data, and then putting it into test reports to summarize the findings</li>
-<li>Headed a project working with the effects of anodizing processes on avionics connectors</li>
-</ul></li>
-<li><strong>Co-Founder - Polyester Club</strong>, (Feburary 2019-August 2020)
-<ul>
-<li>Worked with peers to create and run Polyester Club, where I focused on product design and user interface to ensure user experience was intuitive and visually appealing.</li>
-<li>We functioned as an independent drop shipping company, where we had a custom website by which customers could order custom-designed clothing, and created a unique system of orders to maximize sales in a high school environment</li>
-</ul></li>
+<li>Project leadership</li>
+<li>Report writing</li>
+<li>Anodizing</li>
+<li>Conductivity testing</li>
 </ul>
-</section>
-<section id="skills-and-achievements" class="level2">
-<h2 class="anchored" data-anchor-id="skills-and-achievements">SKILLS AND ACHIEVEMENTS</h2>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<section id="software-tools" class="level4 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<h4 class="anchored" data-anchor-id="software-tools">Software &amp; Tools</h4>
-<ul>
-<li>Onshape</li>
-<li>SolidWorks</li>
-<li>Autodesk</li>
-<li>Python</li>
-<li>C++</li>
-<li>Microsoft Office</li>
-</ul>
-</section>
-<section id="technical-skills" class="level4 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<h4 class="anchored" data-anchor-id="technical-skills">Technical Skills</h4>
-<ul>
-<li>Mechanical design</li>
-<li>Computer-aided modeling</li>
-<li>Technical report writing</li>
-<li>Data analysis</li>
-<li>Easy to follow technical explanations</li>
-</ul>
-</section>
-</div>
-</div>
-<p>Link to my current <a href="Gonzales Resume 2026.pdf">resume</a></p>
 
 
 </section>

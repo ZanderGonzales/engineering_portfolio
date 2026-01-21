@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-cc1d64809b8ed731f92ea1275fe9f05b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-fd35d383c5c255923684e40b2b29d4c3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -150,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="project-overview" class="level2">
 <h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
-<p>The aim of this project was to build a robot capable of following a light source in a dark environment with integrated collision protection, servo control, and a capacitive touch sensor that toggled different movement speeds.</p>
+<p>Built a robot that could follow a light source in a dark environment with integrated collision protection, servo control, and a capacitive touch sensor that toggled different movement speeds.</p>
 <div style="text-align: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -163,8 +163,21 @@ ul.task-list li input[type="checkbox"] {
 <section id="key-aspects-of-the-project" class="level2">
 <h2 class="anchored" data-anchor-id="key-aspects-of-the-project">Key aspects of the project</h2>
 <ul>
-<li><p><strong>Circuit Design</strong>: Assembled and tested circuits using resistors, capacitors, voltage sources (battery), DC motors, and a breadboard.</p></li>
-<li><p><strong>Embedded Systems &amp; Control Logic</strong>: Programmed an Arduino and used a finite state machine to control the robot’s behavior.</p></li>
+<li><strong>Circuit Design</strong>: Created the hardware of the robot to be able to do several tasks
+<ul>
+<li>Object detection</li>
+<li>Capacitive touch sensor</li>
+<li>Light detection</li>
+</ul></li>
+</ul>
+<p><d><d></d></d></p>
+<ul>
+<li><strong>Embedded Systems &amp; Control Logic</strong>: Programmed an Arduino in C++
+<ul>
+<li>Finite state machine to control actions</li>
+<li>Variable creation and monitoring to inform the state machine</li>
+<li>Modular programming technique which separated perception, planning, and action</li>
+</ul></li>
 </ul>
 
 

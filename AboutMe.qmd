@@ -11,7 +11,7 @@ Hi! I’m **Zander Gonzales**: problem solving engineer, student TA, and lover o
 
 * **Bachelor of Science:** Mechanical Engineering, *Brigham Young University*
     * GPA 3.78
-    * Coursework: Computational Methods, Materials Science, Thermodynamics, Heat Transfer (Winter 2026), Fluid Dynamics (Winter 2026), Computer Aided Design, Dynamic Systems Modeling
+    * Coursework: Computational Methods, Materials Science, Thermodynamics, Computer Aided Design, Dynamic Systems Modeling, Elements of Electrical Engineering
 
 * **Minor in Philosophy:** Focus in formal logic and epistemology
 
@@ -44,15 +44,14 @@ environment
 * Autodesk
 * Python
 * C++ 
-* MATLAB 
 * Microsoft Office
 
 #### Technical Skills
 * Mechanical design
 * Computer-aided modeling
-* Technical & project documentation
+* Technical report writing
 * Data analysis
-* Interdisciplinary communication
+* Easy to follow technical explanations
 :::
 
 

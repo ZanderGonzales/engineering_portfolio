@@ -5,22 +5,14 @@ image: car_pic.jpg
 ---
 
 ## Project Overview
-When a car moves without engine power, it gradually slows due to environmental forces like gravity, friction, and air resistance. By examining this natural deceleration, we can learn how these forces affect vehicle motion. In this project, data from a 2016 Aston Martin DB9 coasting on a gentle incline was analyzed to estimate friction and drag effects. The results provide insight into how external forces influence vehicle performance during real-world motion. 
-
-::: {style="text-align: center:"}
-![Photo by [Roberto Nickson](https://unsplash.com/@rpnickson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/red-bmw-coupe-parked-at-road-zu95jkyrGtw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)](car_pic.jpg){fig-align="center" width="50%"}
-:::
+Using data from a 2016 Aston Martin DB9 coasting both up and down hill, we built a Python script that was able to estimate a coefficient of drag as well as the coefficient of static friction that was acting on the car. We also calculated how much power would be required to maintain different constant speeds given the same conditions.
 
 ## The Process
 To analyze the motion of a car coasting both uphill and downhill on an inclined plane, we began by constructing free-body diagrams for each scenario. These diagrams account for the force of gravity, the normal force, aerodynamic drag ($F_d$), and rolling friction ($F_r$). Using the free-body and corresponding kinetic diagrams, we derived the equations of motion by applying Newton’s second law in the direction of motion.
 
 ![](hand_calcs.png)
 
-After deriving the necessary equations, we followed these steps:
-
-* **Numerical Integration:** Converted the second-order equations into a system of first-order ordinary differential equations (ODEs), solved using Python’s `scipy.integrate.odeint`.
-* **Parameter Optimization:** Performed a manual iterative fit of the drag coefficient $C_d$ and the coefficient of kinetic friction $k$ to align the simulated velocity curves with experimental "North" and "South" data sets.
-* **Sensitivity Analysis:** Conducted uncertainty quantification by introducing a $\pm 5\%$ variation in final velocity ($v_f$) to establish confidence intervals for our fitted parameters.
+After deriving the necessary equations, we took the second order differential equation and split it into two first order differential equations, allowing us to use Python's ODE solver. We then created a function that would take our data and find the percent error of the function by comparing it to the experimental data. This allowed us to create confindence intervals as a way of estimating uncertainty. Finally we took what we had learned, and used that in order to find the power necessary to maintain a certain constant velocity. 
 
 
 ## Results

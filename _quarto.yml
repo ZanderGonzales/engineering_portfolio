@@ -5,6 +5,8 @@ project:
 website:
   title: "Zander Gonzales"
   navbar:
+    background: primary
+    foreground: dark
     left:
       - href: AboutMe.qmd
         text: "About Me"
@@ -16,7 +18,7 @@ website:
 
 format:
   html:
-    theme: lux
+    theme: superhero
     css: styles.css
     toc: true
     include-after-body: footer.html

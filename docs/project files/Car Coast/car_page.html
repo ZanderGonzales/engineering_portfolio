@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-cc1d64809b8ed731f92ea1275fe9f05b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-fd35d383c5c255923684e40b2b29d4c3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -181,26 +181,13 @@ window.Quarto = {
 
 <section id="project-overview" class="level2">
 <h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
-<p>When a car moves without engine power, it gradually slows due to environmental forces like gravity, friction, and air resistance. By examining this natural deceleration, we can learn how these forces affect vehicle motion. In this project, data from a 2016 Aston Martin DB9 coasting on a gentle incline was analyzed to estimate friction and drag effects. The results provide insight into how external forces influence vehicle performance during real-world motion.</p>
-<div style="text-align: center:">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="car_pic.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
-<figcaption>Photo by <a href="https://unsplash.com/@rpnickson?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Roberto Nickson</a> on <a href="https://unsplash.com/photos/red-bmw-coupe-parked-at-road-zu95jkyrGtw?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></figcaption>
-</figure>
-</div>
-</div>
+<p>Using data from a 2016 Aston Martin DB9 coasting both up and down hill, we built a Python script that was able to estimate a coefficient of drag as well as the coefficient of static friction that was acting on the car. We also calculated how much power would be required to maintain different constant speeds given the same conditions.</p>
 </section>
 <section id="the-process" class="level2">
 <h2 class="anchored" data-anchor-id="the-process">The Process</h2>
 <p>To analyze the motion of a car coasting both uphill and downhill on an inclined plane, we began by constructing free-body diagrams for each scenario. These diagrams account for the force of gravity, the normal force, aerodynamic drag (<span class="math inline">\(F_d\)</span>), and rolling friction (<span class="math inline">\(F_r\)</span>). Using the free-body and corresponding kinetic diagrams, we derived the equations of motion by applying Newton’s second law in the direction of motion.</p>
 <p><img src="hand_calcs.png" class="img-fluid"></p>
-<p>After deriving the necessary equations, we followed these steps:</p>
-<ul>
-<li><strong>Numerical Integration:</strong> Converted the second-order equations into a system of first-order ordinary differential equations (ODEs), solved using Python’s <code>scipy.integrate.odeint</code>.</li>
-<li><strong>Parameter Optimization:</strong> Performed a manual iterative fit of the drag coefficient <span class="math inline">\(C_d\)</span> and the coefficient of kinetic friction <span class="math inline">\(k\)</span> to align the simulated velocity curves with experimental “North” and “South” data sets.</li>
-<li><strong>Sensitivity Analysis:</strong> Conducted uncertainty quantification by introducing a <span class="math inline">\(\pm 5\%\)</span> variation in final velocity (<span class="math inline">\(v_f\)</span>) to establish confidence intervals for our fitted parameters.</li>
-</ul>
+<p>After deriving the necessary equations, we took the second order differential equation and split it into two first order differential equations, allowing us to use Python’s ODE solver. We then created a function that would take our data and find the percent error of the function by comparing it to the experimental data. This allowed us to create confindence intervals as a way of estimating uncertainty. Finally we took what we had learned, and used that in order to find the power necessary to maintain a certain constant velocity.</p>
 </section>
 <section id="results" class="level2">
 <h2 class="anchored" data-anchor-id="results">Results</h2>

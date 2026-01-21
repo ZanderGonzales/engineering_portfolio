@@ -7,11 +7,13 @@ listing:
     - "Robot/robot_page.qmd"
     - "Influenza/influenza_page.qmd"
     - "Groundhog/groundhog_page.qmd"
-    - "Car Coast/car_page.qmd"
-    - "Spinner/spinner_page.qmd"
+    - "Avionics/avionics_page.qmd"
     - "Bowling Material/bowling_page.qmd" 
+    - "Spinner/spinner_page.qmd"
+    - "Car Coast/car_page.qmd"
+
   type: grid
-  fields: [image, title]
+  fields: [image, title, subtitle]
   sort: false
   
 ---

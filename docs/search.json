@@ -4,35 +4,35 @@
     "href": "Projects.html",
     "title": "Projects",
     "section": "",
-    "text": "To view each project’s details, click the image.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\nView my current portfolio (PDF)"
+    "text": "To view each project’s details, click the image.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOwned by Lockheed Martin\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\nView my current portfolio (PDF)"
   },
   {
     "objectID": "Projects.html#past-projects",
     "href": "Projects.html#past-projects",
     "title": "Projects",
     "section": "",
-    "text": "To view each project’s details, click the image.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\nView my current portfolio (PDF)"
+    "text": "To view each project’s details, click the image.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOwned by Lockheed Martin\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\nView my current portfolio (PDF)"
   },
   {
     "objectID": "project files/Robot/robot_page.html",
     "href": "project files/Robot/robot_page.html",
     "title": "Light Tracking Robot",
     "section": "",
-    "text": "The aim of this project was to build a robot capable of following a light source in a dark environment with integrated collision protection, servo control, and a capacitive touch sensor that toggled different movement speeds.\n\n\n\nVideo\nRuntime Video"
+    "text": "Built a robot that could follow a light source in a dark environment with integrated collision protection, servo control, and a capacitive touch sensor that toggled different movement speeds.\n\n\n\nVideo\nRuntime Video"
   },
   {
     "objectID": "project files/Robot/robot_page.html#project-overview",
     "href": "project files/Robot/robot_page.html#project-overview",
     "title": "Light Tracking Robot",
     "section": "",
-    "text": "The aim of this project was to build a robot capable of following a light source in a dark environment with integrated collision protection, servo control, and a capacitive touch sensor that toggled different movement speeds.\n\n\n\nVideo\nRuntime Video"
+    "text": "Built a robot that could follow a light source in a dark environment with integrated collision protection, servo control, and a capacitive touch sensor that toggled different movement speeds.\n\n\n\nVideo\nRuntime Video"
   },
   {
     "objectID": "project files/Robot/robot_page.html#key-aspects-of-the-project",
     "href": "project files/Robot/robot_page.html#key-aspects-of-the-project",
     "title": "Light Tracking Robot",
     "section": "Key aspects of the project",
-    "text": "Key aspects of the project\n\nCircuit Design: Assembled and tested circuits using resistors, capacitors, voltage sources (battery), DC motors, and a breadboard.\nEmbedded Systems & Control Logic: Programmed an Arduino and used a finite state machine to control the robot’s behavior."
+    "text": "Key aspects of the project\n\nCircuit Design: Created the hardware of the robot to be able to do several tasks\n\nObject detection\nCapacitive touch sensor\nLight detection\n\n\n\n\nEmbedded Systems & Control Logic: Programmed an Arduino in C++\n\nFinite state machine to control actions\nVariable creation and monitoring to inform the state machine\nModular programming technique which separated perception, planning, and action"
   },
   {
     "objectID": "project files/Groundhog/groundhog_page.html",
@@ -109,7 +109,7 @@
     "href": "AboutMe.html#education",
     "title": "About Me",
     "section": "EDUCATION",
-    "text": "EDUCATION\n\nBachelor of Science: Mechanical Engineering, Brigham Young University\n\nGPA 3.78\nCoursework: Computational Methods, Materials Science, Thermodynamics, Heat Transfer (Winter 2026), Fluid Dynamics (Winter 2026), Computer Aided Design, Dynamic Systems Modeling\n\nMinor in Philosophy: Focus in formal logic and epistemology"
+    "text": "EDUCATION\n\nBachelor of Science: Mechanical Engineering, Brigham Young University\n\nGPA 3.78\nCoursework: Computational Methods, Materials Science, Thermodynamics, Computer Aided Design, Dynamic Systems Modeling, Elements of Electrical Engineering\n\nMinor in Philosophy: Focus in formal logic and epistemology"
   },
   {
     "objectID": "AboutMe.html#work-experience",
@@ -123,28 +123,28 @@
     "href": "AboutMe.html#skills-and-achievements",
     "title": "About Me",
     "section": "SKILLS AND ACHIEVEMENTS",
-    "text": "SKILLS AND ACHIEVEMENTS\n\n\n\nSoftware & Tools\n\nOnshape\nSolidWorks\nAutodesk\nPython\nC++\nMATLAB\nMicrosoft Office\n\n\n\nTechnical Skills\n\nMechanical design\nComputer-aided modeling\nTechnical & project documentation\nData analysis\nInterdisciplinary communication\n\n\n\n\nLink to my current resume"
+    "text": "SKILLS AND ACHIEVEMENTS\n\n\n\nSoftware & Tools\n\nOnshape\nSolidWorks\nAutodesk\nPython\nC++\nMicrosoft Office\n\n\n\nTechnical Skills\n\nMechanical design\nComputer-aided modeling\nTechnical report writing\nData analysis\nEasy to follow technical explanations\n\n\n\n\nLink to my current resume"
   },
   {
     "objectID": "project files/Car Coast/car_page.html",
     "href": "project files/Car Coast/car_page.html",
     "title": "Calculating Experimental Coeffiecients of Drag and Static Friction of a Coasting Car",
     "section": "",
-    "text": "When a car moves without engine power, it gradually slows due to environmental forces like gravity, friction, and air resistance. By examining this natural deceleration, we can learn how these forces affect vehicle motion. In this project, data from a 2016 Aston Martin DB9 coasting on a gentle incline was analyzed to estimate friction and drag effects. The results provide insight into how external forces influence vehicle performance during real-world motion.\n\n\n\n\nPhoto by Roberto Nickson on Unsplash"
+    "text": "Using data from a 2016 Aston Martin DB9 coasting both up and down hill, we built a Python script that was able to estimate a coefficient of drag as well as the coefficient of static friction that was acting on the car. We also calculated how much power would be required to maintain different constant speeds given the same conditions."
   },
   {
     "objectID": "project files/Car Coast/car_page.html#project-overview",
     "href": "project files/Car Coast/car_page.html#project-overview",
     "title": "Calculating Experimental Coeffiecients of Drag and Static Friction of a Coasting Car",
     "section": "",
-    "text": "When a car moves without engine power, it gradually slows due to environmental forces like gravity, friction, and air resistance. By examining this natural deceleration, we can learn how these forces affect vehicle motion. In this project, data from a 2016 Aston Martin DB9 coasting on a gentle incline was analyzed to estimate friction and drag effects. The results provide insight into how external forces influence vehicle performance during real-world motion.\n\n\n\n\nPhoto by Roberto Nickson on Unsplash"
+    "text": "Using data from a 2016 Aston Martin DB9 coasting both up and down hill, we built a Python script that was able to estimate a coefficient of drag as well as the coefficient of static friction that was acting on the car. We also calculated how much power would be required to maintain different constant speeds given the same conditions."
   },
   {
     "objectID": "project files/Car Coast/car_page.html#the-process",
     "href": "project files/Car Coast/car_page.html#the-process",
     "title": "Calculating Experimental Coeffiecients of Drag and Static Friction of a Coasting Car",
     "section": "The Process",
-    "text": "The Process\nTo analyze the motion of a car coasting both uphill and downhill on an inclined plane, we began by constructing free-body diagrams for each scenario. These diagrams account for the force of gravity, the normal force, aerodynamic drag (\\(F_d\\)), and rolling friction (\\(F_r\\)). Using the free-body and corresponding kinetic diagrams, we derived the equations of motion by applying Newton’s second law in the direction of motion.\n\nAfter deriving the necessary equations, we followed these steps:\n\nNumerical Integration: Converted the second-order equations into a system of first-order ordinary differential equations (ODEs), solved using Python’s scipy.integrate.odeint.\nParameter Optimization: Performed a manual iterative fit of the drag coefficient \\(C_d\\) and the coefficient of kinetic friction \\(k\\) to align the simulated velocity curves with experimental “North” and “South” data sets.\nSensitivity Analysis: Conducted uncertainty quantification by introducing a \\(\\pm 5\\%\\) variation in final velocity (\\(v_f\\)) to establish confidence intervals for our fitted parameters."
+    "text": "The Process\nTo analyze the motion of a car coasting both uphill and downhill on an inclined plane, we began by constructing free-body diagrams for each scenario. These diagrams account for the force of gravity, the normal force, aerodynamic drag (\\(F_d\\)), and rolling friction (\\(F_r\\)). Using the free-body and corresponding kinetic diagrams, we derived the equations of motion by applying Newton’s second law in the direction of motion.\n\nAfter deriving the necessary equations, we took the second order differential equation and split it into two first order differential equations, allowing us to use Python’s ODE solver. We then created a function that would take our data and find the percent error of the function by comparing it to the experimental data. This allowed us to create confindence intervals as a way of estimating uncertainty. Finally we took what we had learned, and used that in order to find the power necessary to maintain a certain constant velocity."
   },
   {
     "objectID": "project files/Car Coast/car_page.html#results",
@@ -215,5 +215,26 @@
     "title": "Custom Injection Molded Fidget Spinner",
     "section": "Steps",
     "text": "Steps\n\nCreate a model of the proposed spinner body and the bearing caps to go with it  \nCreate a model of the mold \nCreate an FEA analysis assuming that the spinner was dropped from 2 meters \nMachine the mold (at this point the group voted on a design to all use, hence the change in design from hereon in) \nUse an injection to create the spinner, and input the bearings \n\nView the complete report here"
+  },
+  {
+    "objectID": "project files/Avionics/avionics_page.html",
+    "href": "project files/Avionics/avionics_page.html",
+    "title": "Effects of Anodizing on Avionics Connector Corrosion",
+    "section": "",
+    "text": "While working at a materials testing lab in Lockheed Martin, I was put in charge of a project testing the effects of different anodizing processes on corrosion rate of avionics connectors.\n\nThis was done by taking avionics connectors, treating them with different anodizing processes. Thesse were then put in fog testing chambers, one with salt fog and one with SO\\(_2\\) fog, and then taken out. Corrosion was tested using conductivity to measure corrosion. I then took all of this information and put it into a techincal internal report."
+  },
+  {
+    "objectID": "project files/Avionics/avionics_page.html#project-overview",
+    "href": "project files/Avionics/avionics_page.html#project-overview",
+    "title": "Effects of Anodizing on Avionics Connector Corrosion",
+    "section": "",
+    "text": "While working at a materials testing lab in Lockheed Martin, I was put in charge of a project testing the effects of different anodizing processes on corrosion rate of avionics connectors.\n\nThis was done by taking avionics connectors, treating them with different anodizing processes. Thesse were then put in fog testing chambers, one with salt fog and one with SO\\(_2\\) fog, and then taken out. Corrosion was tested using conductivity to measure corrosion. I then took all of this information and put it into a techincal internal report."
+  },
+  {
+    "objectID": "project files/Avionics/avionics_page.html#skills-demonstrated",
+    "href": "project files/Avionics/avionics_page.html#skills-demonstrated",
+    "title": "Effects of Anodizing on Avionics Connector Corrosion",
+    "section": "Skills Demonstrated",
+    "text": "Skills Demonstrated\n\nProject leadership\nReport writing\nAnodizing\nConductivity testing"
   }
 ]

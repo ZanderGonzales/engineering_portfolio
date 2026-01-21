@@ -1,0 +1,20 @@
+---
+title: "Effects of Anodizing on Avionics Connector Corrosion"
+subtitle: "*Owned by Lockheed Martin*"
+image: avionics_pic.jpg
+---
+
+## Project Overview
+While working at a materials testing lab in Lockheed Martin, I was put in charge of a project testing the effects of different anodizing processes on corrosion rate of avionics connectors.
+
+![](avionics_pic.jpg)
+
+This was done by taking avionics connectors, treating them with different anodizing processes. Thesse were then put in fog testing chambers, one with salt fog and one with SO$_2$ fog, and then taken out. Corrosion was tested using conductivity to measure corrosion. I then took all of this information and put it into a techincal internal report.
+
+![](saltfog_pic.jpg)
+
+## Skills Demonstrated
+* Project leadership
+* Report writing
+* Anodizing
+* Conductivity testing
