@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Zander Gonzales"
+  navbar:
+    left:
+      - href: AboutMe.qmd
+        text: "About Me"
+      - href: Projects.qmd
+        text: "Projects"
+    right:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/zandergonzales
+
+format:
+  html:
+    theme: lux
+    css: styles.css
+    toc: true
+    include-after-body: footer.html
+
+
+

@@ -1,0 +1,30 @@
+
+---
+title: "Projects"
+listing:
+  id: my-project-grid
+  contents: 
+    - "Robot/robot_page.qmd"
+    - "Influenza/influenza_page.qmd"
+    - "Groundhog/groundhog_page.qmd"
+    - "Car Coast/car_page.qmd"
+    - "Spinner/spinner_page.qmd"
+    - "Bowling Material/bowling_page.qmd" 
+  type: grid
+  fields: [image, title]
+  sort: false
+  
+---
+## Past Projects
+To view each project's details, click the image. 
+
+::: {#my-project-grid}
+:::
+
+---
+Current Projects: 
+
+---
+<div style="text-align: center;">
+  View my current [portfolio (PDF)](Gonzales Portfolio 2026.pdf)
+</div>

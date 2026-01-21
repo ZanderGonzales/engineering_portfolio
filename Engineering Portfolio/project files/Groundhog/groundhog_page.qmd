@@ -1,0 +1,36 @@
+---
+title: "Statistical Analysis of Punxsutawney Phil's Groundhog Day Predictions"
+image: punxsutawney_phil.jpg   
+---
+## Project Overview
+In this project, I analyzed the accuracy of Punxsutawney Phil's Groundhog Day predictions using historical temperature data. By applying hypothesis testing for proportions, I evaluated whether Phil's forecasts are statistically significant compared to random chance. 
+
+::: {layout-align="center"}
+![](punxsutawney_phil.jpg){width=50% fig-align="center"}
+:::
+
+## Introduction
+Every year on February 2nd Punxsutawney Phil, a groundhog, comes out and looks around to see if he can see his shadow. If he sees his shadow, the prediction is that there will be another six weeks of winter that year; if he doesn’t see his shadow, the prediction is that there will be an early spring that year. While this has been a tradition in the United States going back to 1887, the objective of this work is to see if there is any true correlation between Punxsutawney Phil seeing his shadow and the weather following that event. This will allow us to see if it is statistically significant whether Punxsutawney Phil sees his shadow or not, and what we might be able to expect from the weather based on that data.
+
+## Methods
+To find the information regarding whether Punxsutawney saw his shadow or not, I used data collected by the Punxsutawney Groundhog Club.The information about weather comes from NOAA's National Climatic Data Center, where they measure temperature in different regions of the United States and average them together per month.
+To create the inferential statistic, there were two null hypotheses formed, based on whether Punxsutawney Phil saw his shadow or not. If he saw his shadow, the null hypothesis was that the mean temperature of the following month would be equal to or greater than the mean temperature of every year combined for the month. The alternative was that the mean would be lower than the total mean of all the data. If he didn’t see his shadow, the null hypothesis was that the mean temperature of the following month would be equal to or less than the mean temperature of every year combined for the month. The alternative was that the mean would be greater than the total mean of all the data. This was a way of measuring whether it really would continue to be winter if he saw his shadow, and if there really would be an early spring if he didn’t see his shadow. From there the hypotheses were tested using a double sample hypothesis test in Python, using the Scipy package *scipy.stats.ttest_ind()*.
+
+
+## Results
+
+![](punxsutawney_graphs.png)
+
+Looking at these violin plots, it is visually clear that him seeing his shadow has a mean temperature very slightly lower, while him not seeing his shadow has a more significant increase in temperature resulting. To find if these were actually significant, the *scipy* package was used with an alpha value of 0.05.
+
+|              | P-Value | Confidence Interval |
+|--------------|:------:|:-------------------:|
+| Full Shadow  | 0.2906 | [-∞, 0.4842]        |
+| No Shadow    | 0.0092 | [0.5269, ∞]         |
+
+: Contains the resultant p-value for a double sample hypothesis test, with the null hypotheses being that the mean temperature if he saw his shadow would be greater than or equal to the total mean temperature, and that the mean temperature if he didn’t see his shadow would be less than or equal to the total mean temperature. The confidence intervals provided are a 95% confidence of the difference in means between the two samples. {#tbl-engine-stats}
+
+## Discussion
+In the context of the original question, the p values show an interesting significance. If Punxsutawney Phil doesn’t see his shadow, thereby predicting a continued winter, there is almost a 30% chance the average temperature of the next month will be greater than the total average, putting it well above a 5% significance level. However, if Punxsutawney Phil sees his shadow and predicts an early spring, there is only a 0.92% chance that the average temperature of the next month will be less than the total average, meaning it is statistically significant and we can reject the null hypothesis. Thus, we conclude that it is not statistically significant if Punxsutawney predicts a continued winter (p= 0.2906), but it is significant if he predicts an early spring (p= 0.0092). 
+
+View the complete report [here](punxsutawney_report.pdf)

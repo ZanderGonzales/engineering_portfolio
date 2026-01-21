@@ -1,0 +1,23 @@
+
+---
+title: "Solving for Influenza Predicting Variables in a Dynamic Model"
+image: virus_pic.jpg
+---
+
+## Project Overview
+Influenza spreading through a closed community can be modeled by a series of three equations tracking people that are susceptible, infectious, and recovered; this model is referred to as the SIR Model by the World Health Organization. This model requires two constants that are specific to the virus or disease, representing an infection rate and a recovery rate. Using publicly available influenza data from both Chicago and LA, a double for loop was utilized to find the values of these constants was found that best matches the data for that strain, allowing predictions to be made. 
+
+::: {style="text-align: center:"}
+![](virus_pic.jpg){fig-align="center" width="50%"}
+:::
+
+## Methods and Results
+The primary unknown parameters were β and Ɣ, the parameters representing infection and recovery rate for this specific strain of influenza. A Python implementation using solve_ivp in SciPy solved the SIR differential equations. To estimate the optimal β and γ parameters, a mean squared error function compared model predictions to actual data. A grid search over arrays of β and γ values, the ranges taken from online research of what common values were, produced a 2D error matrix, visualized using a contour plot (Figure 1). The global minimum in this matrix identified the β and γ values that best fit the observed data. The results of the models predictions were then graphed over top the actual collected data over the course of the year. This same graph was also used to show how expected peak times and maximum intake number at hospitals would change based off of changed assumed constants(Figure 2).
+
+![](virus_error_graph.png)
+![](virus_graph.png)
+
+## Discussion
+The application of the SIR (Susceptible-Infected-Recovered) model demonstrated a high degree of accuracy in tracking the 2023-2024 influenza season for both Chicago and Los Angeles. As illustrated in the results, the optimized model closely tracks the peak and duration of the infection curves. The effectiveness of the model relied heavily on the optimization of the transmission rate (β) and recovery rate (Ɣ). The use of a Mean Squared Error (MSE) function allowed for the quantification of fit quality, and the generation of a contour map confirmed the existence of a global minimum. This suggests that for a specific strain and location, distinct and constant values for transmissibility and recovery can reasonably approximate the complex dynamics of a flu season, and this could be used in a predictive manner to help hospitals know when and how to prepare around flu season.
+
+View the complete report [here](influenza_report.pdf)

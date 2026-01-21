@@ -1,0 +1,29 @@
+
+---
+title: "Custom Injection Molded Fidget Spinner"
+image: spinner_pic.png
+---
+
+## Project Overview
+For this project, the goal was to design a fidget spinner using SolidWorks that would be able to house bearings in it. From that CAD file we created an FEA analysis, machined a mold of the CAD file, and finally used injection to create the actual fidget spinner that we had designed.
+
+## Skills Demonstrated
+* CAD Modeling
+* FEA Analysis
+* Machining
+* Injection Molding
+
+## Steps
+1. Create a model of the proposed spinner body and the bearing caps to go with it
+![](spinner_body_sketch.png)
+![](bearing_sketch.png)
+2. Create a model of the mold
+![](spinner_mold.png)
+3. Create an FEA analysis assuming that the spinner was dropped from 2 meters
+![](spinner_fea.png)
+4. Machine the mold (*at this point the group voted on a design to all use, hence the change in design from hereon in*)
+![](spinner_mold_final.jpg)
+5. Use an injection to create the spinner, and input the bearings
+![](spinner_pic.png)
+
+View the complete report [here](spinner_report.pdf)

@@ -1,0 +1,19 @@
+---
+title: "Ideal Bowling Ball Material Selection"
+image: bowling_pic.jpg
+---
+## Project Overview
+
+For this project, the goal was to use material science principles to find the ideal material to make a bowling ball out of. This was done by finding real life requirements of a bowling ball and then linking these requirements to material properties. From these properties a series of five engineering style questions were formed to create reasonable material property requirements. Finally different materials were analyzed according to these requirements and the results were collected in various figures and tables to visually recap data and to see which material was the best.
+
+## Results and Final Recommendation    
+
+![](bowling_problems.png)
+
+<br><br>
+
+![](bowling_solutions.png)
+
+The material that was chosen in the end was polystyrene.
+
+View the complete report [here](bowling_report.pdf)

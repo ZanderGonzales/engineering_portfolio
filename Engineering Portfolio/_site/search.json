@@ -1,0 +1,338 @@
+[
+  {
+    "objectID": "project files/groundhog_data.html",
+    "href": "project files/groundhog_data.html",
+    "title": "Statistical Analysis of Punxsutawney Phil’s Groundhog Day Predictions",
+    "section": "",
+    "text": "In this project, I analyzed the accuracy of Punxsutawney Phil’s Groundhog Day predictions using historical temperature data. By applying hypothesis testing for proportions, I evaluated whether Phil’s forecasts are statistically significant compared to random chance."
+  },
+  {
+    "objectID": "project files/groundhog_data.html#project-overview",
+    "href": "project files/groundhog_data.html#project-overview",
+    "title": "Statistical Analysis of Punxsutawney Phil’s Groundhog Day Predictions",
+    "section": "",
+    "text": "In this project, I analyzed the accuracy of Punxsutawney Phil’s Groundhog Day predictions using historical temperature data. By applying hypothesis testing for proportions, I evaluated whether Phil’s forecasts are statistically significant compared to random chance."
+  },
+  {
+    "objectID": "project files/groundhog_data.html#introduction",
+    "href": "project files/groundhog_data.html#introduction",
+    "title": "Statistical Analysis of Punxsutawney Phil’s Groundhog Day Predictions",
+    "section": "Introduction",
+    "text": "Introduction\nEvery year on February 2nd Punxsutawney Phil, a groundhog, comes out and looks around to see if he can see his shadow. If he sees his shadow, the prediction is that there will be another six weeks of winter that year; if he doesn’t see his shadow, the prediction is that there will be an early spring that year. While this has been a tradition in the United States going back to 1887, the objective of this work is to see if there is any true correlation between Punxsutawney Phil seeing his shadow and the weather following that event. This will allow us to see if it is statistically significant whether Punxsutawney Phil sees his shadow or not, and what we might be able to expect from the weather based on that data."
+  },
+  {
+    "objectID": "project files/groundhog_data.html#methods",
+    "href": "project files/groundhog_data.html#methods",
+    "title": "Statistical Analysis of Punxsutawney Phil’s Groundhog Day Predictions",
+    "section": "Methods",
+    "text": "Methods\nTo find the information regarding whether Punxsutawney saw his shadow or not, I used data collected by the Punxsutawney Groundhog Club.The information about weather comes from NOAA’s National Climatic Data Center, where they measure temperature in different regions of the United States and average them together per month. To create the inferential statistic, there were two null hypotheses formed, based on whether Punxsutawney Phil saw his shadow or not. If he saw his shadow, the null hypothesis was that the mean temperature of the following month would be equal to or greater than the mean temperature of every year combined for the month. The alternative was that the mean would be lower than the total mean of all the data. If he didn’t see his shadow, the null hypothesis was that the mean temperature of the following month would be equal to or less than the mean temperature of every year combined for the month. The alternative was that the mean would be greater than the total mean of all the data. This was a way of measuring whether it really would continue to be winter if he saw his shadow, and if there really would be an early spring if he didn’t see his shadow. From there the hypotheses were tested using a double sample hypothesis test in Python, using the Scipy package scipy.stats.ttest_ind()."
+  },
+  {
+    "objectID": "project files/groundhog_data.html#results",
+    "href": "project files/groundhog_data.html#results",
+    "title": "Statistical Analysis of Punxsutawney Phil’s Groundhog Day Predictions",
+    "section": "Results",
+    "text": "Results\n\nLooking at these violin plots, it is visually clear that him seeing his shadow has a mean temperature very slightly lower, while him not seeing his shadow has a more significant increase in temperature resulting. To find if these were actually significant, the scipy package was used with an alpha value of 0.05.\n\n\n\nTable 1: Contains the resultant p-value for a double sample hypothesis test, with the null hypotheses being that the mean temperature if he saw his shadow would be greater than or equal to the total mean temperature, and that the mean temperature if he didn’t see his shadow would be less than or equal to the total mean temperature. The confidence intervals provided are a 95% confidence of the difference in means between the two samples.\n\n\n\n\n\n\nP-Value\nConfidence Interval\n\n\n\n\nFull Shadow\n0.2906\n[-∞, 0.4842]\n\n\nNo Shadow\n0.0092\n[0.5269, ∞]"
+  },
+  {
+    "objectID": "project files/groundhog_data.html#discussion",
+    "href": "project files/groundhog_data.html#discussion",
+    "title": "Statistical Analysis of Punxsutawney Phil’s Groundhog Day Predictions",
+    "section": "Discussion",
+    "text": "Discussion\nIn the context of the original question, the p values show an interesting significance. If Punxsutawney Phil doesn’t see his shadow, thereby predicting a continued winter, there is almost a 30% chance the average temperature of the next month will be greater than the total average, putting it well above a 5% significance level. However, if Punxsutawney Phil sees his shadow and predicts an early spring, there is only a 0.92% chance that the average temperature of the next month will be less than the total average, meaning it is statistically significant and we can reject the null hypothesis. Thus, we conclude that it is not statistically significant if Punxsutawney predicts a continued winter (p= 0.2906), but it is significant if he predicts an early spring (p= 0.0092).\nView the complete report here"
+  },
+  {
+    "objectID": "Projects.html",
+    "href": "Projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "To view each project’s details, click the image.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\nView my current portfolio (PDF)"
+  },
+  {
+    "objectID": "AboutMe.html",
+    "href": "AboutMe.html",
+    "title": "About Me",
+    "section": "",
+    "text": "Hi! I’m Zander Gonzales: problem solving engineer, student TA, and lover of models. I am currently a Junior studying Mechanical Engineering at Brigham Young University. Hopefully you like my website!"
+  },
+  {
+    "objectID": "AboutMe.html#education",
+    "href": "AboutMe.html#education",
+    "title": "About Me",
+    "section": "EDUCATION",
+    "text": "EDUCATION\n\nBachelor of Science: Mechanical Engineering, Brigham Young University\n\nGPA 3.78\nCoursework: Computational Methods, Materials Science, Thermodynamics, Heat Transfer (Winter 2026), Fluid Dynamics (Winter 2026), Computer Aided Design, Dynamic Systems Modeling\n\nMinor in Philosophy: Focus in formal logic and epistemology"
+  },
+  {
+    "objectID": "AboutMe.html#work-experience",
+    "href": "AboutMe.html#work-experience",
+    "title": "About Me",
+    "section": "WORK EXPERIENCE",
+    "text": "WORK EXPERIENCE\n\nTeaching Assistant - Computational Methods, Brigham Young University | Provo, Utah (April 2025 – Current)\n\nWorked under two different professors, Dr. Steven Charles and Dr. Andrew Ning, as a TA helping both with labs and holding weekly office hours where I would work with individual students to help them understand and be able to execute assignments.\nLearned how to both teach and become extremely proficient in Python and Excel in order to numerically solve problems and use statistics to perform data analysis.\n\nIntern - Lockheed Martin, *Materials Testing Lab | Fort Worth, Texas (August 2020-August 2021)\n\nPrimarily worked with sealants and anodizing of aluminum alloys, where my roles consisted of working in the lab and collecting data, and then putting it into test reports to summarize the findings\nHeaded a project working with the effects of anodizing processes on avionics connectors\n\nCo-Founder - Polyester Club, (Feburary 2019-August 2020)\n\nWorked with peers to create and run Polyester Club, where I focused on product design and user interface to ensure user experience was intuitive and visually appealing.\nWe functioned as an independent drop shipping company, where we had a custom website by which customers could order custom-designed clothing, and created a unique system of orders to maximize sales in a high school environment"
+  },
+  {
+    "objectID": "AboutMe.html#skills-and-achievements",
+    "href": "AboutMe.html#skills-and-achievements",
+    "title": "About Me",
+    "section": "SKILLS AND ACHIEVEMENTS",
+    "text": "SKILLS AND ACHIEVEMENTS\n\n\n\nSoftware & Tools\n\nOnshape\nSolidWorks\nAutodesk\nPython\nC++\nMATLAB\nMicrosoft Office\n\n\n\nTechnical Skills\n\nMechanical design\nComputer-aided modeling\nTechnical & project documentation\nData analysis\nInterdisciplinary communication\n\n\n\n\nLink to my current resume"
+  },
+  {
+    "objectID": "project files/Groundhog/groundhog_data.html",
+    "href": "project files/Groundhog/groundhog_data.html",
+    "title": "Statistical Analysis of Punxsutawney Phil’s Groundhog Day Predictions",
+    "section": "",
+    "text": "In this project, I analyzed the accuracy of Punxsutawney Phil’s Groundhog Day predictions using historical temperature data. By applying hypothesis testing for proportions, I evaluated whether Phil’s forecasts are statistically significant compared to random chance."
+  },
+  {
+    "objectID": "project files/Groundhog/groundhog_data.html#project-overview",
+    "href": "project files/Groundhog/groundhog_data.html#project-overview",
+    "title": "Statistical Analysis of Punxsutawney Phil’s Groundhog Day Predictions",
+    "section": "",
+    "text": "In this project, I analyzed the accuracy of Punxsutawney Phil’s Groundhog Day predictions using historical temperature data. By applying hypothesis testing for proportions, I evaluated whether Phil’s forecasts are statistically significant compared to random chance."
+  },
+  {
+    "objectID": "project files/Groundhog/groundhog_data.html#introduction",
+    "href": "project files/Groundhog/groundhog_data.html#introduction",
+    "title": "Statistical Analysis of Punxsutawney Phil’s Groundhog Day Predictions",
+    "section": "Introduction",
+    "text": "Introduction\nEvery year on February 2nd Punxsutawney Phil, a groundhog, comes out and looks around to see if he can see his shadow. If he sees his shadow, the prediction is that there will be another six weeks of winter that year; if he doesn’t see his shadow, the prediction is that there will be an early spring that year. While this has been a tradition in the United States going back to 1887, the objective of this work is to see if there is any true correlation between Punxsutawney Phil seeing his shadow and the weather following that event. This will allow us to see if it is statistically significant whether Punxsutawney Phil sees his shadow or not, and what we might be able to expect from the weather based on that data."
+  },
+  {
+    "objectID": "project files/Groundhog/groundhog_data.html#methods",
+    "href": "project files/Groundhog/groundhog_data.html#methods",
+    "title": "Statistical Analysis of Punxsutawney Phil’s Groundhog Day Predictions",
+    "section": "Methods",
+    "text": "Methods\nTo find the information regarding whether Punxsutawney saw his shadow or not, I used data collected by the Punxsutawney Groundhog Club.The information about weather comes from NOAA’s National Climatic Data Center, where they measure temperature in different regions of the United States and average them together per month. To create the inferential statistic, there were two null hypotheses formed, based on whether Punxsutawney Phil saw his shadow or not. If he saw his shadow, the null hypothesis was that the mean temperature of the following month would be equal to or greater than the mean temperature of every year combined for the month. The alternative was that the mean would be lower than the total mean of all the data. If he didn’t see his shadow, the null hypothesis was that the mean temperature of the following month would be equal to or less than the mean temperature of every year combined for the month. The alternative was that the mean would be greater than the total mean of all the data. This was a way of measuring whether it really would continue to be winter if he saw his shadow, and if there really would be an early spring if he didn’t see his shadow. From there the hypotheses were tested using a double sample hypothesis test in Python, using the Scipy package scipy.stats.ttest_ind()."
+  },
+  {
+    "objectID": "project files/Groundhog/groundhog_data.html#results",
+    "href": "project files/Groundhog/groundhog_data.html#results",
+    "title": "Statistical Analysis of Punxsutawney Phil’s Groundhog Day Predictions",
+    "section": "Results",
+    "text": "Results\n\nLooking at these violin plots, it is visually clear that him seeing his shadow has a mean temperature very slightly lower, while him not seeing his shadow has a more significant increase in temperature resulting. To find if these were actually significant, the scipy package was used with an alpha value of 0.05.\n\n\n\nTable 1: Contains the resultant p-value for a double sample hypothesis test, with the null hypotheses being that the mean temperature if he saw his shadow would be greater than or equal to the total mean temperature, and that the mean temperature if he didn’t see his shadow would be less than or equal to the total mean temperature. The confidence intervals provided are a 95% confidence of the difference in means between the two samples.\n\n\n\n\n\n\nP-Value\nConfidence Interval\n\n\n\n\nFull Shadow\n0.2906\n[-∞, 0.4842]\n\n\nNo Shadow\n0.0092\n[0.5269, ∞]"
+  },
+  {
+    "objectID": "project files/Groundhog/groundhog_data.html#discussion",
+    "href": "project files/Groundhog/groundhog_data.html#discussion",
+    "title": "Statistical Analysis of Punxsutawney Phil’s Groundhog Day Predictions",
+    "section": "Discussion",
+    "text": "Discussion\nIn the context of the original question, the p values show an interesting significance. If Punxsutawney Phil doesn’t see his shadow, thereby predicting a continued winter, there is almost a 30% chance the average temperature of the next month will be greater than the total average, putting it well above a 5% significance level. However, if Punxsutawney Phil sees his shadow and predicts an early spring, there is only a 0.92% chance that the average temperature of the next month will be less than the total average, meaning it is statistically significant and we can reject the null hypothesis. Thus, we conclude that it is not statistically significant if Punxsutawney predicts a continued winter (p= 0.2906), but it is significant if he predicts an early spring (p= 0.0092).\nView the complete report here"
+  },
+  {
+    "objectID": "project files/Influenza/influenza_page.html",
+    "href": "project files/Influenza/influenza_page.html",
+    "title": "Solving for Influenza Predicting Variables in a Dynamic Model",
+    "section": "",
+    "text": "Influenza spreading through a closed community can be modeled by a series of three equations tracking people that are susceptible, infectious, and recovered; this model is referred to as the SIR Model by the World Health Organization. This model requires two constants that are specific to the virus or disease, representing an infection rate and a recovery rate. Using publicly available influenza data from both Chicago and LA, a double for loop was utilized to find the values of these constants was found that best matches the data for that strain, allowing predictions to be made."
+  },
+  {
+    "objectID": "project files/Influenza/influenza_page.html#project-overview",
+    "href": "project files/Influenza/influenza_page.html#project-overview",
+    "title": "Solving for Influenza Predicting Variables in a Dynamic Model",
+    "section": "",
+    "text": "Influenza spreading through a closed community can be modeled by a series of three equations tracking people that are susceptible, infectious, and recovered; this model is referred to as the SIR Model by the World Health Organization. This model requires two constants that are specific to the virus or disease, representing an infection rate and a recovery rate. Using publicly available influenza data from both Chicago and LA, a double for loop was utilized to find the values of these constants was found that best matches the data for that strain, allowing predictions to be made."
+  },
+  {
+    "objectID": "project files/Influenza/influenza_page.html#the-process",
+    "href": "project files/Influenza/influenza_page.html#the-process",
+    "title": "Solving for Influenza Predicting Variables in a Dynamic Model",
+    "section": "The Process",
+    "text": "The Process\nTo analyze the motion of a car coasting both uphill and downhill on an inclined plane, we began by constructing free-body diagrams for each scenario. These diagrams account for the force of gravity, the normal force, aerodynamic drag (\\(F_d\\)), and rolling friction (\\(F_r\\)). Using the free-body and corresponding kinetic diagrams, we derived the equations of motion by applying Newton’s second law in the direction of motion.\n\nAfter deriving the necessary equations, we followed these steps:\n\nNumerical Integration: Converted the second-order equations into a system of first-order ordinary differential equations (ODEs), solved using Python’s scipy.integrate.odeint.\nParameter Optimization: Performed a manual iterative fit of the drag coefficient \\(C_d\\) and the coefficient of kinetic friction \\(k\\) to align the simulated velocity curves with experimental “North” and “South” data sets.\nSensitivity Analysis: Conducted uncertainty quantification by introducing a \\(\\pm 5\\%\\) variation in final velocity (\\(v_f\\)) to establish confidence intervals for our fitted parameters."
+  },
+  {
+    "objectID": "project files/Influenza/influenza_page.html#results",
+    "href": "project files/Influenza/influenza_page.html#results",
+    "title": "Solving for Influenza Predicting Variables in a Dynamic Model",
+    "section": "Results",
+    "text": "Results\nThe best-fit parameters that matched the experimental data were \\(C_d = 0.3283\\) and \\(k = 0.0170\\). Using these values, the modeled curves closely aligned with the measured data, as shown in the velocity-time comparison."
+  },
+  {
+    "objectID": "project files/Influenza/influenza_page.html#discussion",
+    "href": "project files/Influenza/influenza_page.html#discussion",
+    "title": "Solving for Influenza Predicting Variables in a Dynamic Model",
+    "section": "Discussion",
+    "text": "Discussion\nThe application of the SIR (Susceptible-Infected-Recovered) model demonstrated a high degree of accuracy in tracking the 2023-2024 influenza season for both Chicago and Los Angeles. As illustrated in the results, the optimized model closely tracks the peak and duration of the infection curves. The effectiveness of the model relied heavily on the optimization of the transmission rate (β) and recovery rate (Ɣ). The use of a Mean Squared Error (MSE) function allowed for the quantification of fit quality, and the generation of a contour map confirmed the existence of a global minimum. This suggests that for a specific strain and location, distinct and constant values for transmissibility and recovery can reasonably approximate the complex dynamics of a flu season, and this could be used in a predictive manner to help hospitals know when and how to prepare around flu season.\nView the complete report here"
+  },
+  {
+    "objectID": "project files/Groundhog/groundhog_page.html",
+    "href": "project files/Groundhog/groundhog_page.html",
+    "title": "Statistical Analysis of Punxsutawney Phil’s Groundhog Day Predictions",
+    "section": "",
+    "text": "In this project, I analyzed the accuracy of Punxsutawney Phil’s Groundhog Day predictions using historical temperature data. By applying hypothesis testing for proportions, I evaluated whether Phil’s forecasts are statistically significant compared to random chance."
+  },
+  {
+    "objectID": "project files/Groundhog/groundhog_page.html#project-overview",
+    "href": "project files/Groundhog/groundhog_page.html#project-overview",
+    "title": "Statistical Analysis of Punxsutawney Phil’s Groundhog Day Predictions",
+    "section": "",
+    "text": "In this project, I analyzed the accuracy of Punxsutawney Phil’s Groundhog Day predictions using historical temperature data. By applying hypothesis testing for proportions, I evaluated whether Phil’s forecasts are statistically significant compared to random chance."
+  },
+  {
+    "objectID": "project files/Groundhog/groundhog_page.html#introduction",
+    "href": "project files/Groundhog/groundhog_page.html#introduction",
+    "title": "Statistical Analysis of Punxsutawney Phil’s Groundhog Day Predictions",
+    "section": "Introduction",
+    "text": "Introduction\nEvery year on February 2nd Punxsutawney Phil, a groundhog, comes out and looks around to see if he can see his shadow. If he sees his shadow, the prediction is that there will be another six weeks of winter that year; if he doesn’t see his shadow, the prediction is that there will be an early spring that year. While this has been a tradition in the United States going back to 1887, the objective of this work is to see if there is any true correlation between Punxsutawney Phil seeing his shadow and the weather following that event. This will allow us to see if it is statistically significant whether Punxsutawney Phil sees his shadow or not, and what we might be able to expect from the weather based on that data."
+  },
+  {
+    "objectID": "project files/Groundhog/groundhog_page.html#methods",
+    "href": "project files/Groundhog/groundhog_page.html#methods",
+    "title": "Statistical Analysis of Punxsutawney Phil’s Groundhog Day Predictions",
+    "section": "Methods",
+    "text": "Methods\nTo find the information regarding whether Punxsutawney saw his shadow or not, I used data collected by the Punxsutawney Groundhog Club.The information about weather comes from NOAA’s National Climatic Data Center, where they measure temperature in different regions of the United States and average them together per month. To create the inferential statistic, there were two null hypotheses formed, based on whether Punxsutawney Phil saw his shadow or not. If he saw his shadow, the null hypothesis was that the mean temperature of the following month would be equal to or greater than the mean temperature of every year combined for the month. The alternative was that the mean would be lower than the total mean of all the data. If he didn’t see his shadow, the null hypothesis was that the mean temperature of the following month would be equal to or less than the mean temperature of every year combined for the month. The alternative was that the mean would be greater than the total mean of all the data. This was a way of measuring whether it really would continue to be winter if he saw his shadow, and if there really would be an early spring if he didn’t see his shadow. From there the hypotheses were tested using a double sample hypothesis test in Python, using the Scipy package scipy.stats.ttest_ind()."
+  },
+  {
+    "objectID": "project files/Groundhog/groundhog_page.html#results",
+    "href": "project files/Groundhog/groundhog_page.html#results",
+    "title": "Statistical Analysis of Punxsutawney Phil’s Groundhog Day Predictions",
+    "section": "Results",
+    "text": "Results\n\nLooking at these violin plots, it is visually clear that him seeing his shadow has a mean temperature very slightly lower, while him not seeing his shadow has a more significant increase in temperature resulting. To find if these were actually significant, the scipy package was used with an alpha value of 0.05.\n\n\n\nTable 1: Contains the resultant p-value for a double sample hypothesis test, with the null hypotheses being that the mean temperature if he saw his shadow would be greater than or equal to the total mean temperature, and that the mean temperature if he didn’t see his shadow would be less than or equal to the total mean temperature. The confidence intervals provided are a 95% confidence of the difference in means between the two samples.\n\n\n\n\n\n\nP-Value\nConfidence Interval\n\n\n\n\nFull Shadow\n0.2906\n[-∞, 0.4842]\n\n\nNo Shadow\n0.0092\n[0.5269, ∞]"
+  },
+  {
+    "objectID": "project files/Groundhog/groundhog_page.html#discussion",
+    "href": "project files/Groundhog/groundhog_page.html#discussion",
+    "title": "Statistical Analysis of Punxsutawney Phil’s Groundhog Day Predictions",
+    "section": "Discussion",
+    "text": "Discussion\nIn the context of the original question, the p values show an interesting significance. If Punxsutawney Phil doesn’t see his shadow, thereby predicting a continued winter, there is almost a 30% chance the average temperature of the next month will be greater than the total average, putting it well above a 5% significance level. However, if Punxsutawney Phil sees his shadow and predicts an early spring, there is only a 0.92% chance that the average temperature of the next month will be less than the total average, meaning it is statistically significant and we can reject the null hypothesis. Thus, we conclude that it is not statistically significant if Punxsutawney predicts a continued winter (p= 0.2906), but it is significant if he predicts an early spring (p= 0.0092).\nView the complete report here"
+  },
+  {
+    "objectID": "project files/Car Coast/car_page.html",
+    "href": "project files/Car Coast/car_page.html",
+    "title": "Calculating Experimental Coeffiecients of Drag and Static Friction of a Coasting Car",
+    "section": "",
+    "text": "When a car moves without engine power, it gradually slows due to environmental forces like gravity, friction, and air resistance. By examining this natural deceleration, we can learn how these forces affect vehicle motion. In this project, data from a 2016 Aston Martin DB9 coasting on a gentle incline was analyzed to estimate friction and drag effects. The results provide insight into how external forces influence vehicle performance during real-world motion.\n\n\n\n\nPhoto by Roberto Nickson on Unsplash"
+  },
+  {
+    "objectID": "project files/Car Coast/car_page.html#project-overview",
+    "href": "project files/Car Coast/car_page.html#project-overview",
+    "title": "Calculating Experimental Coeffiecients of Drag and Static Friction of a Coasting Car",
+    "section": "",
+    "text": "When a car moves without engine power, it gradually slows due to environmental forces like gravity, friction, and air resistance. By examining this natural deceleration, we can learn how these forces affect vehicle motion. In this project, data from a 2016 Aston Martin DB9 coasting on a gentle incline was analyzed to estimate friction and drag effects. The results provide insight into how external forces influence vehicle performance during real-world motion.\n\n\n\n\nPhoto by Roberto Nickson on Unsplash"
+  },
+  {
+    "objectID": "project files/Car Coast/car_page.html#the-process",
+    "href": "project files/Car Coast/car_page.html#the-process",
+    "title": "Calculating Experimental Coeffiecients of Drag and Static Friction of a Coasting Car",
+    "section": "The Process",
+    "text": "The Process\nTo analyze the motion of a car coasting both uphill and downhill on an inclined plane, we began by constructing free-body diagrams for each scenario. These diagrams account for the force of gravity, the normal force, aerodynamic drag (\\(F_d\\)), and rolling friction (\\(F_r\\)). Using the free-body and corresponding kinetic diagrams, we derived the equations of motion by applying Newton’s second law in the direction of motion.\n\nAfter deriving the necessary equations, we followed these steps:\n\nNumerical Integration: Converted the second-order equations into a system of first-order ordinary differential equations (ODEs), solved using Python’s scipy.integrate.odeint.\nParameter Optimization: Performed a manual iterative fit of the drag coefficient \\(C_d\\) and the coefficient of kinetic friction \\(k\\) to align the simulated velocity curves with experimental “North” and “South” data sets.\nSensitivity Analysis: Conducted uncertainty quantification by introducing a \\(\\pm 5\\%\\) variation in final velocity (\\(v_f\\)) to establish confidence intervals for our fitted parameters."
+  },
+  {
+    "objectID": "project files/Car Coast/car_page.html#results",
+    "href": "project files/Car Coast/car_page.html#results",
+    "title": "Calculating Experimental Coeffiecients of Drag and Static Friction of a Coasting Car",
+    "section": "Results",
+    "text": "Results\nThe best-fit parameters that matched the experimental data were \\(C_d = 0.3283\\) and \\(k = 0.0170\\). Using these values, the modeled curves closely aligned with the measured data, as shown in the velocity-time comparison."
+  },
+  {
+    "objectID": "project files/Car Coast/car_page.html#discussion",
+    "href": "project files/Car Coast/car_page.html#discussion",
+    "title": "Calculating Experimental Coeffiecients of Drag and Static Friction of a Coasting Car",
+    "section": "Discussion",
+    "text": "Discussion\nThe coefficient of drag \\(C_d\\) primarily influences vehicle deceleration at higher speeds due to its quadratic relationship with velocity, making it more dominant during the early phase of coast-down. In contrast, the rolling friction coefficient \\(k\\) exerts a near-constant effect and is more significant at lower speeds.\nBecause of this, the effects of \\(C_d\\) and \\(k\\) can be distinguished by examining how quickly velocity drops early in the coast versus how it behaves near the end. However, there is still some flexibility—it is possible to slightly increase one parameter while decreasing the other and still achieve a visually similar fit. This limits the precision with which either parameter can be determined individually, a trade-off we quantified through our confidence interval analysis.\nView the complete report here"
+  },
+  {
+    "objectID": "project files/Influenza/influenza_page.html#methods-and-results",
+    "href": "project files/Influenza/influenza_page.html#methods-and-results",
+    "title": "Solving for Influenza Predicting Variables in a Dynamic Model",
+    "section": "Methods and Results",
+    "text": "Methods and Results\nThe primary unknown parameters were β and Ɣ, the parameters representing infection and recovery rate for this specific strain of influenza. A Python implementation using solve_ivp in SciPy solved the SIR differential equations. To estimate the optimal β and γ parameters, a mean squared error function compared model predictions to actual data. A grid search over arrays of β and γ values, the ranges taken from online research of what common values were, produced a 2D error matrix, visualized using a contour plot (Figure 1). The global minimum in this matrix identified the β and γ values that best fit the observed data. The results of the models predictions were then graphed over top the actual collected data over the course of the year. This same graph was also used to show how expected peak times and maximum intake number at hospitals would change based off of changed assumed constants(Figure 2)."
+  },
+  {
+    "objectID": "project files/Robot/robot_page.html",
+    "href": "project files/Robot/robot_page.html",
+    "title": "Light Tracking Robot",
+    "section": "",
+    "text": "The aim of this project was to build a robot capable of following a light source in a dark environment with integrated collision protection, servo control, and a capacitive touch sensor that toggled different movement speeds.\n\n\n\nVideo\nRuntime Video"
+  },
+  {
+    "objectID": "project files/Robot/robot_page.html#project-overview",
+    "href": "project files/Robot/robot_page.html#project-overview",
+    "title": "Light Tracking Robot",
+    "section": "",
+    "text": "The aim of this project was to build a robot capable of following a light source in a dark environment with integrated collision protection, servo control, and a capacitive touch sensor that toggled different movement speeds.\n\n\n\nVideo\nRuntime Video"
+  },
+  {
+    "objectID": "project files/Robot/robot_page.html#key-aspects-of-the-project",
+    "href": "project files/Robot/robot_page.html#key-aspects-of-the-project",
+    "title": "Light Tracking Robot",
+    "section": "Key aspects of the project",
+    "text": "Key aspects of the project\n\nCircuit Design: Assembled and tested circuits using resistors, capacitors, voltage sources (battery), DC motors, and a breadboard.\nEmbedded Systems & Control Logic: Programmed an Arduino and used a finite state machine to control the robot’s behavior."
+  },
+  {
+    "objectID": "project files/Bowling Material/bowling.html",
+    "href": "project files/Bowling Material/bowling.html",
+    "title": "Ideal Bowling Ball Material Selection",
+    "section": "",
+    "text": "For this project, the goal was to use material science principles to find the ideal material to make a bowling ball out of. This was done by finding real life requirements of a bowling ball and then linking these requirements to material properties. From these properties a series of five engineering style questions were formed to create reasonable material property requirements. Finally different materials were analyzed according to these requirements and the results were collected in various figures and tables to visually recap data and to see which material was the best."
+  },
+  {
+    "objectID": "project files/Bowling Material/bowling.html#project-overview",
+    "href": "project files/Bowling Material/bowling.html#project-overview",
+    "title": "Ideal Bowling Ball Material Selection",
+    "section": "",
+    "text": "For this project, the goal was to use material science principles to find the ideal material to make a bowling ball out of. This was done by finding real life requirements of a bowling ball and then linking these requirements to material properties. From these properties a series of five engineering style questions were formed to create reasonable material property requirements. Finally different materials were analyzed according to these requirements and the results were collected in various figures and tables to visually recap data and to see which material was the best."
+  },
+  {
+    "objectID": "project files/Bowling Material/bowling.html#results-and-final-recommendation",
+    "href": "project files/Bowling Material/bowling.html#results-and-final-recommendation",
+    "title": "Ideal Bowling Ball Material Selection",
+    "section": "Results and Final Recommendation",
+    "text": "Results and Final Recommendation\n\n\n\nThe material that was chosen in the end was polystyrene.\nView the complete report here"
+  },
+  {
+    "objectID": "project files/Spinner/spinner_page.html",
+    "href": "project files/Spinner/spinner_page.html",
+    "title": "Custom Injection Molded Fidget Spinner",
+    "section": "",
+    "text": "For this project, the goal was to design a fidget spinner using SolidWorks that would be able to house bearings in it. From that CAD file we created an FEA analysis, machined a mold of the CAD file, and finally used injection to create the actual fidget spinner that we had designed."
+  },
+  {
+    "objectID": "project files/Spinner/spinner_page.html#project-overview",
+    "href": "project files/Spinner/spinner_page.html#project-overview",
+    "title": "Custom Injection Molded Fidget Spinner",
+    "section": "",
+    "text": "For this project, the goal was to design a fidget spinner using SolidWorks that would be able to house bearings in it. From that CAD file we created an FEA analysis, machined a mold of the CAD file, and finally used injection to create the actual fidget spinner that we had designed."
+  },
+  {
+    "objectID": "project files/Spinner/spinner_page.html#skills-demonstrated",
+    "href": "project files/Spinner/spinner_page.html#skills-demonstrated",
+    "title": "Custom Injection Molded Fidget Spinner",
+    "section": "Skills Demonstrated",
+    "text": "Skills Demonstrated\n\nCAD Modeling\nFEA Analysis\nMachining\nInjection Molding"
+  },
+  {
+    "objectID": "project files/Spinner/spinner_page.html#steps",
+    "href": "project files/Spinner/spinner_page.html#steps",
+    "title": "Custom Injection Molded Fidget Spinner",
+    "section": "Steps",
+    "text": "Steps\n\nCreate a model of the proposed spinner body and the bearing caps to go with it  \nCreate a model of the mold \nCreate an FEA analysis assuming that the spinner was dropped from 2 meters \nMachine the mold (at this point the group voted on a design to all use, hence the change in design from hereon in) \nUse an injection to create the spinner, and input the bearings \n\nView the complete report here"
+  },
+  {
+    "objectID": "Projects.html#past-projects",
+    "href": "Projects.html#past-projects",
+    "title": "Projects",
+    "section": "",
+    "text": "To view each project’s details, click the image.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\nView my current portfolio (PDF)"
+  },
+  {
+    "objectID": "project files/Bowling Material/bowling_page.html",
+    "href": "project files/Bowling Material/bowling_page.html",
+    "title": "Ideal Bowling Ball Material Selection",
+    "section": "",
+    "text": "For this project, the goal was to use material science principles to find the ideal material to make a bowling ball out of. This was done by finding real life requirements of a bowling ball and then linking these requirements to material properties. From these properties a series of five engineering style questions were formed to create reasonable material property requirements. Finally different materials were analyzed according to these requirements and the results were collected in various figures and tables to visually recap data and to see which material was the best."
+  },
+  {
+    "objectID": "project files/Bowling Material/bowling_page.html#project-overview",
+    "href": "project files/Bowling Material/bowling_page.html#project-overview",
+    "title": "Ideal Bowling Ball Material Selection",
+    "section": "",
+    "text": "For this project, the goal was to use material science principles to find the ideal material to make a bowling ball out of. This was done by finding real life requirements of a bowling ball and then linking these requirements to material properties. From these properties a series of five engineering style questions were formed to create reasonable material property requirements. Finally different materials were analyzed according to these requirements and the results were collected in various figures and tables to visually recap data and to see which material was the best."
+  },
+  {
+    "objectID": "project files/Bowling Material/bowling_page.html#results-and-final-recommendation",
+    "href": "project files/Bowling Material/bowling_page.html#results-and-final-recommendation",
+    "title": "Ideal Bowling Ball Material Selection",
+    "section": "Results and Final Recommendation",
+    "text": "Results and Final Recommendation\n\n\n\nThe material that was chosen in the end was polystyrene.\nView the complete report here"
+  }
+]
