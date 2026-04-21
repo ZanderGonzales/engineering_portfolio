@@ -1,0 +1,48 @@
+
+---
+title: "Creating a Traffic Model Using Fluid Flow Equations"
+image: real_traffic_pic.jpg
+---
+
+## Project Overview
+Traffic engineers sometimes use fluid flow equations to see how traffic can be expected to flow at a macro level. By solving the Reynold's Transport Theorem with respect to desnity of cars we created an equation that can approximate forward movement of traffic along a closed stretch of road. We then used Fick's Law to create a diffusion equation to show how traffic will flow from lanes with greater density to lanes with less density.
+
+## Simulation Conditions
+The goal was to be able to model two common traffic situations: a red light turning green and traffic approaching a lane closure. 
+* Condition 1: Red light at x = 300 m for 250 frames
+::: {style="text-align: center;"}
+![Runtime Video](red_light_vid.mp4){height="400px"}
+:::
+
+* Condition 2: Bottom lane closed at x = 300 m
+::: {style="text-align: center;"}
+![Runtime Video](lane_close_vid.mp4){height="400px"}
+:::
+
+## Methods
+The LWR Model
+The Lighthill-Whitman-Richards (LWR) model is a 1D approximation of traffic flow that utilizes the conservation equation.
+1. Reynolds Transport Theorem (RTT)
+The model begins by applying the Reynolds Transport Theorem to cars to solve in differential form:
+$$\frac{dB_{sys}}{dt} = \frac{d}{dt} \int_{CV} \rho \, dV + \int_{CS} \rho (\vec{v} \cdot \vec{n}) \, dA$$ 
+2. Conservation of Cars 
+By applying the conservation of cars, the equation simplifies to the fundamental traffic flow PDE:
+$$\frac{\partial \rho}{\partial t} + \frac{\partial (\rho v)}{\partial x} = 0$$ 
+3. Greenshields Closure
+To relate velocity ($v$) and density ($\rho$), the Greenshields model is applied:
+$$v(\rho) = v_{max} \left( 1 - \frac{\rho}{\rho_{max}} \right)$$ 
+
+Numerical Implementation: Solving the LWR Model
+To simulate the model, finite difference methods are used to solve the partial differential equations.
+1. Lax-Friedrichs Finite Difference (Flux Form)
+This method is used to handle the forward flux of traffic:
+$$\rho_j^{n+1} = \frac{1}{2}(\rho_{j+1}^n + \rho_{j-1}^n) - \frac{\Delta t}{2\Delta x}(f_{j+1}^n - f_{j-1}^n)$$
+2. Fick’s Law for Inter-lane Diffusion
+To account for lane merging or sideways movement, Fick's Law is incorporated:
+$$J = -D \frac{\partial \rho}{\partial x}$$ 
+3. Fully Formed PDE
+The final simulation uses a combined PDE featuring both the LWR forward flux and Fick’s Law sideways diffusion:
+$$\frac{\partial \rho}{\partial t} + \frac{\partial f(\rho)}{\partial x} = D \frac{\partial^2 \rho}{\partial x^2}$$
+
+## Discussion
+As can be seen by the videos of the simulation above, the equations we created are able to basically simulate what we would expect to happen in traffic. As traffic approaches the red light we see a shockwave propagate backwards as traffic density increases, and we then see a rarefraction wave move forward as it turns green, with the high density band moving backwards. In the lane closure conditions we can see denisty pile up behind the closed lane, and that dense region slowly piling outwards to the other lanes. That the simulation can model what we would expect to happen gives us confidence that the equations we used are reasonable in the situation.
