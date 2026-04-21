@@ -25,7 +25,7 @@ To view each project's details, click the image.
 :::
 
 ---
-Current Projects: 
+## Current Projects
 
 ---
 <div style="text-align: center;">

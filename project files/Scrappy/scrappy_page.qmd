@@ -1,16 +1,16 @@
 
 ---
 title: "Fully Autonomous Mechatronics Rover"
-image: scrappy_main_photo.jpg
+image: scrappy_main_photo_short.jpg
 ---
 
 ## Project Overview
 The goal of the rover was to autonomously complete a track that contained 5 different tasks at random locations around the course using. 
 
 ::: {style="text-align: center:"}
-![](old_scrappy.jpg){fig-align="center" width="50%"}
+![*An early iteration of our rover*](old_scrappy.jpg){fig-align="center" height="200px"}
 :::
-*An early iteration of our rover*
+
 
 ## Tasks
 * **Leave Lander and Line Follow**
@@ -30,4 +30,5 @@ The goal of the rover was to autonomously complete a track that contained 5 diff
     ![](data_transmission.jpg)
 
 ## Course Completion Run
-![](scrappy_main_photo.jpg)
+![*Final rover iteration*](scrappy_main_photo_short.jpg)
+![Runtime Video](scrappy_run.mp4){height="400px"}
