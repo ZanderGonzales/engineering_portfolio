@@ -38,9 +38,14 @@ The goal of the rover was to autonomously complete a track that contained 5 diff
 ## Course Completion Run
 
 ::: {style="text-align: left; margin-left: 20px;"}
-![Runtime Video](scrappy_run.mp4){height="400px"}
+![](scrappy_run.mp4){height="400px"}
+
+Runtime Video
 :::
 
 ::: {style="text-align: left; margin-left: 20px;"}
-![*Final rover iteration*](scrappy_main_photo_short.jpg){height="300px"}
+
+![](scrappy_main_photo_short.jpg){height="300px"}
+
+*Final rover iteration*
 :::
