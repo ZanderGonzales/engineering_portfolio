@@ -15,16 +15,37 @@ For this project, the goal was to design a fidget spinner using SolidWorks that 
 
 ## Steps
 1. Create a model of the proposed spinner body and the bearing caps to go with it
-![](spinner_body_sketch.png)
-![](bearing_sketch.png)
+
+::: {style="text-align: left; margin-left: 20px;"}
+![](spinner_body_sketch.png){height="300px"}
+:::
+
+::: {style="text-align: left; margin-left: 20px;"}
+![](bearing_sketch.png){height="300px"}
+:::
+
 2. Create a model of the mold
-<d>
-![](spinner_mold.png)
+
+::: {style="text-align: left; margin-left: 20px;"}
+![](spinner_mold.png){height="300px"}
+:::
+
 3. Create an FEA analysis assuming that the spinner was dropped from 2 meters
-![](spinner_fea.png)
+
+::: {style="text-align: left; margin-left: 20px;"}
+![](spinner_fea.png){height="300px"}
+:::
+
 4. Machine the mold (*at this point the group voted on a design to all use, hence the change in design from hereon in*)
-![](spinner_mold_final.jpg)
+
+::: {style="text-align: left; margin-left: 20px;"}
+![](spinner_mold_final.jpg){height="300px"}
+:::
+
 5. Use an injection to create the spinner, and input the bearings
-![](spinner_pic.png)
+
+::: {style="text-align: left; margin-left: 20px;"}
+![](spinner_pic.png){height="300px"}
+:::
 
 View the complete report [here](spinner_report.pdf)
