@@ -8,14 +8,15 @@ image: real_traffic_pic.jpg
 Traffic engineers sometimes use fluid flow equations to see how traffic can be expected to flow at a macro level. By solving the Reynold's Transport Theorem with respect to desnity of cars we created an equation that can approximate forward movement of traffic along a closed stretch of road. We then used Fick's Law to create a diffusion equation to show how traffic will flow from lanes with greater density to lanes with less density.
 
 ## Simulation Conditions
-The goal was to be able to model two common traffic situations: a red light turning green and traffic approaching a lane closure. 
-* Condition 1: Red light at x = 300 m for 250 frames
+The goal was to be able to model two common traffic situations: a red light turning green and traffic approaching a lane closure.
+
+### Condition 1: Red light at x = 300 m for 250 frames
 
 ::: {style="text-align: center;"}
 ![Runtime Video](red_light_vid.mp4){height="400px"}
 :::
 
-* Condition 2: Bottom lane closed at x = 300 m
+### Condition 2: Bottom lane closed at x = 300 m
 
 ::: {style="text-align: center;"}
 ![Runtime Video](lane_close_vid.mp4){height="400px"}

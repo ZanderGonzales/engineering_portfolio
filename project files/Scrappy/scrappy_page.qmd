@@ -8,7 +8,9 @@ image: scrappy_main_photo_short.jpg
 The goal of the rover was to autonomously complete a track that contained 5 different tasks at random locations around the course using. 
 
 ::: {style="text-align: center;"}
+
 ![](old_scrappy.jpg){fig-align="center" height="300px"}
+
 *An early iteration of our rover*
 :::
 
@@ -16,6 +18,7 @@ The goal of the rover was to autonomously complete a track that contained 5 diff
 ## Tasks
 * **Leave Lander and Line Follow**
     Leave the lander section and begin following the white line. This was done by creating a QRD array that would be able to tell where it was on the white line and adjust to follow it.
+
     ![](QRD_array.jpg){fig-align="center" height="300px"}
 
 * **Sample Collection and Return**
@@ -34,5 +37,8 @@ The goal of the rover was to autonomously complete a track that contained 5 diff
 
 ::: {style="text-align: center;"}
 ![Runtime Video](scrappy_run.mp4){height="400px"}
+:::
+
+::: {style="text-align: center;"}
 ![*Final rover iteration*](scrappy_main_photo_short.jpg){fig-align="center" height="300px"}
 :::
