@@ -242,14 +242,14 @@
     "href": "project files/Scrappy/scrappy_page.html",
     "title": "Fully Autonomous Mechatronics Rover",
     "section": "",
-    "text": "The goal of the rover was to autonomously complete a track that contained 5 different tasks at random locations around the course using.\n\n\n\n\nAn early iteration of our rover"
+    "text": "The goal of the rover was to autonomously complete a track that contained 5 different tasks at random locations around the course using.\n\n An early iteration of our rover"
   },
   {
     "objectID": "project files/Scrappy/scrappy_page.html#project-overview",
     "href": "project files/Scrappy/scrappy_page.html#project-overview",
     "title": "Fully Autonomous Mechatronics Rover",
     "section": "",
-    "text": "The goal of the rover was to autonomously complete a track that contained 5 different tasks at random locations around the course using.\n\n\n\n\nAn early iteration of our rover"
+    "text": "The goal of the rover was to autonomously complete a track that contained 5 different tasks at random locations around the course using.\n\n An early iteration of our rover"
   },
   {
     "objectID": "project files/Scrappy/scrappy_page.html#tasks",
@@ -263,7 +263,7 @@
     "href": "project files/Scrappy/scrappy_page.html#course-completion-run",
     "title": "Fully Autonomous Mechatronics Rover",
     "section": "Course Completion Run",
-    "text": "Course Completion Run\n Runtime Video"
+    "text": "Course Completion Run\n\nRuntime Video"
   },
   {
     "objectID": "project files/Traffic Sim/traffic_sim_page.html",
@@ -280,11 +280,18 @@
     "text": "Traffic engineers sometimes use fluid flow equations to see how traffic can be expected to flow at a macro level. By solving the Reynold’s Transport Theorem with respect to desnity of cars we created an equation that can approximate forward movement of traffic along a closed stretch of road. We then used Fick’s Law to create a diffusion equation to show how traffic will flow from lanes with greater density to lanes with less density."
   },
   {
+    "objectID": "project files/Traffic Sim/traffic_sim_page.html#simulation-conditions",
+    "href": "project files/Traffic Sim/traffic_sim_page.html#simulation-conditions",
+    "title": "Creating a Traffic Model Using Fluid Flow Equations",
+    "section": "Simulation Conditions",
+    "text": "Simulation Conditions\nThe goal was to be able to model two common traffic situations: a red light turning green and traffic approaching a lane closure. * Condition 1: Red light at x = 300 m for 250 frames\n\n\n\nVideo\nRuntime Video\n\n\n\n\nCondition 2: Bottom lane closed at x = 300 m\n\n\n\n\nVideo\nRuntime Video"
+  },
+  {
     "objectID": "project files/Traffic Sim/traffic_sim_page.html#methods",
     "href": "project files/Traffic Sim/traffic_sim_page.html#methods",
     "title": "Creating a Traffic Model Using Fluid Flow Equations",
     "section": "Methods",
-    "text": "Methods\n\nThe LWR Model\nThe Lighthill-Whitman-Richards (LWR) model is a 1D approximation of traffic flow that utilizes the conservation equation. #### 1. Reynolds Transport Theorem (RTT) The model begins by applying the Reynolds Transport Theorem to cars to solve in differential form: \\[\\frac{dB_{sys}}{dt} = \\frac{d}{dt} \\int_{CV} \\rho \\, dV + \\int_{CS} \\rho (\\vec{v} \\cdot \\vec{n}) \\, dA\\] #### 2. Conservation of Cars By applying the conservation of cars, the equation simplifies to the fundamental traffic flow PDE: \\[\\frac{\\partial \\rho}{\\partial t} + \\frac{\\partial (\\rho v)}{\\partial x} = 0\\] #### 3. Greenshields Closure To relate velocity (\\(v\\)) and density (\\(\\rho\\)), the Greenshields model is applied: \\[v(\\rho) = v_{max} \\left( 1 - \\frac{\\rho}{\\rho_{max}} \\right)\\]\n\n\nNumerical Implementation: Solving the LWR Model\nTo simulate the model, finite difference methods are used to solve the partial differential equations. #### 1. Lax-Friedrichs Finite Difference (Flux Form) This method is used to handle the forward flux of traffic: \\[\\rho_j^{n+1} = \\frac{1}{2}(\\rho_{j+1}^n + \\rho_{j-1}^n) - \\frac{\\Delta t}{2\\Delta x}(f_{j+1}^n - f_{j-1}^n)\\] #### 2. Fick’s Law for Inter-lane Diffusion To account for lane merging or sideways movement, Fick’s Law is incorporated: \\[J = -D \\frac{\\partial \\rho}{\\partial x}\\] #### 3. Fully Formed PDE The final simulation uses a combined PDE featuring both the LWR forward flux and Fick’s Law sideways diffusion: \\[\\frac{\\partial \\rho}{\\partial t} + \\frac{\\partial f(\\rho)}{\\partial x} = D \\frac{\\partial^2 \\rho}{\\partial x^2}\\]"
+    "text": "Methods\n\nThe LWR Model\nThe Lighthill-Whitman-Richards (LWR) model is a 1D approximation of traffic flow that utilizes the conservation equation. 1. Reynolds Transport Theorem (RTT) The model begins by applying the Reynolds Transport Theorem to cars to solve in differential form: \\[\\frac{dB_{sys}}{dt} = \\frac{d}{dt} \\int_{CV} \\rho \\, dV + \\int_{CS} \\rho (\\vec{v} \\cdot \\vec{n}) \\, dA\\]\n\nConservation of Cars By applying the conservation of cars, the equation simplifies to the fundamental traffic flow PDE: \\[\\frac{\\partial \\rho}{\\partial t} + \\frac{\\partial (\\rho v)}{\\partial x} = 0\\]\nGreenshields Closure To relate velocity (\\(v\\)) and density (\\(\\rho\\)), the Greenshields model is applied: \\[v(\\rho) = v_{max} \\left( 1 - \\frac{\\rho}{\\rho_{max}} \\right)\\]\n\n\n\nNumerical Implementation: Solving the LWR Model\nTo simulate the model, finite difference methods are used to solve the partial differential equations.\n\nLax-Friedrichs Finite Difference (Flux Form) This method is used to handle the forward flux of traffic: \\[\\rho_j^{n+1} = \\frac{1}{2}(\\rho_{j+1}^n + \\rho_{j-1}^n) - \\frac{\\Delta t}{2\\Delta x}(f_{j+1}^n - f_{j-1}^n)\\]\nFick’s Law for Inter-lane Diffusion To account for lane merging or sideways movement, Fick’s Law is incorporated: \\[J = -D \\frac{\\partial \\rho}{\\partial x}\\]\nFully Formed PDE The final simulation uses a combined PDE featuring both the LWR forward flux and Fick’s Law sideways diffusion: \\[\\frac{\\partial \\rho}{\\partial t} + \\frac{\\partial f(\\rho)}{\\partial x} = D \\frac{\\partial^2 \\rho}{\\partial x^2}\\]"
   },
   {
     "objectID": "project files/Traffic Sim/traffic_sim_page.html#discussion",

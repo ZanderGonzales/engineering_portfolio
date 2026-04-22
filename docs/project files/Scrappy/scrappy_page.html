@@ -152,19 +152,14 @@ ul.task-list li input[type="checkbox"] {
 <section id="project-overview" class="level2">
 <h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
 <p>The goal of the rover was to autonomously complete a track that contained 5 different tasks at random locations around the course using.</p>
-<div style="text-align: center:">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="old_scrappy.jpg" height="200" class="figure-img"></p>
-<figcaption><em>An early iteration of our rover</em></figcaption>
-</figure>
-</div>
+<div style="text-align: center;">
+<p><img src="old_scrappy.jpg" class="quarto-figure quarto-figure-center" height="300"> <em>An early iteration of our rover</em></p>
 </div>
 </section>
 <section id="tasks" class="level2">
 <h2 class="anchored" data-anchor-id="tasks">Tasks</h2>
 <ul>
-<li><p><strong>Leave Lander and Line Follow</strong> Leave the lander section and begin following the white line. This was done by creating a QRD array that would be able to tell where it was on the white line and adjust to follow it. <img src="QRD_array.jpg" class="img-fluid"></p></li>
+<li><p><strong>Leave Lander and Line Follow</strong> Leave the lander section and begin following the white line. This was done by creating a QRD array that would be able to tell where it was on the white line and adjust to follow it. <img src="QRD_array.jpg" class="quarto-figure quarto-figure-center" height="300"></p></li>
 <li><p><strong>Sample Collection and Return</strong> Using an IR sensor, see the sample collection apparatus and back up into, catching the ping pong ball as it falls. Later on when the robot sees the two sample return bins, place it in the one that holds the correct color. This was done by mounting both an IR sensor as well as ultrasonic sesnors to see the various tasks, and then designing a ball catch and drop mechanism. <img src="sample_collect.jpg" class="img-fluid"> <img src="sample_return.jpg" class="img-fluid"></p></li>
 <li><p><strong>Canyon Navigation</strong> After entering a section that is enclosed by walls and has no lines, autonomously exit the section. We were able to do this by using ultrasonic sensors, and then writing code that when it saw a wall in front of it would then turn left or right based on which ultrasonic sensor was more open.</p></li>
 <li><p><strong>Data Transmission</strong> After entering the lander, successfully locate an IR beam and shine a laser at the board on which the IR beam is mounted. By having a servo that would mark where the IR signal was highest, we would then go to that location and turn on a laser to hit the target reliably. <img src="data_transmission.jpg" class="img-fluid"></p></li>
@@ -172,7 +167,9 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="course-completion-run" class="level2">
 <h2 class="anchored" data-anchor-id="course-completion-run">Course Completion Run</h2>
-<p><img src="scrappy_main_photo_short.jpg" class="img-fluid" alt="Final rover iteration"> <video src="scrappy_run.mp4" height="400" controls=""><a href="scrappy_run.mp4">Runtime Video</a></video></p>
+<div style="text-align: center;">
+<p><video src="scrappy_run.mp4" height="400" controls=""><a href="scrappy_run.mp4">Runtime Video</a></video> <img src="scrappy_main_photo_short.jpg" class="quarto-figure quarto-figure-center" height="300" alt="Final rover iteration"></p>
+</div>
 
 
 </section>

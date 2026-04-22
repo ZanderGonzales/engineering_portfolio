@@ -7,15 +7,16 @@ image: scrappy_main_photo_short.jpg
 ## Project Overview
 The goal of the rover was to autonomously complete a track that contained 5 different tasks at random locations around the course using. 
 
-::: {style="text-align: center:"}
-![*An early iteration of our rover*](old_scrappy.jpg){fig-align="center" height="200px"}
+::: {style="text-align: center;"}
+![](old_scrappy.jpg){fig-align="center" height="300px"}
+*An early iteration of our rover*
 :::
 
 
 ## Tasks
 * **Leave Lander and Line Follow**
     Leave the lander section and begin following the white line. This was done by creating a QRD array that would be able to tell where it was on the white line and adjust to follow it.
-    ![](QRD_array.jpg)
+    ![](QRD_array.jpg){fig-align="center" height="300px"}
 
 * **Sample Collection and Return**
     Using an IR sensor, see the sample collection apparatus and back up into, catching the ping pong ball as it falls. Later on when the robot sees the two sample return bins, place it in the one that holds the correct color. This was done by mounting both an IR sensor as well as ultrasonic sesnors to see the various tasks, and then designing a ball catch and drop mechanism.
@@ -30,5 +31,8 @@ The goal of the rover was to autonomously complete a track that contained 5 diff
     ![](data_transmission.jpg)
 
 ## Course Completion Run
-![*Final rover iteration*](scrappy_main_photo_short.jpg)
+
+::: {style="text-align: center;"}
 ![Runtime Video](scrappy_run.mp4){height="400px"}
+![*Final rover iteration*](scrappy_main_photo_short.jpg){fig-align="center" height="300px"}
+:::

@@ -151,6 +151,7 @@ window.Quarto = {
    
   <ul>
   <li><a href="#project-overview" id="toc-project-overview" class="nav-link active" data-scroll-target="#project-overview">Project Overview</a></li>
+  <li><a href="#simulation-conditions" id="toc-simulation-conditions" class="nav-link" data-scroll-target="#simulation-conditions">Simulation Conditions</a></li>
   <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a>
   <ul class="collapse">
   <li><a href="#the-lwr-model" id="toc-the-lwr-model" class="nav-link" data-scroll-target="#the-lwr-model">The LWR Model</a></li>
@@ -185,31 +186,48 @@ window.Quarto = {
 <section id="project-overview" class="level2">
 <h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
 <p>Traffic engineers sometimes use fluid flow equations to see how traffic can be expected to flow at a macro level. By solving the Reynold’s Transport Theorem with respect to desnity of cars we created an equation that can approximate forward movement of traffic along a closed stretch of road. We then used Fick’s Law to create a diffusion equation to show how traffic will flow from lanes with greater density to lanes with less density.</p>
-<!-- ## Simulation Conditions
-The goal was to be able to model two common traffic situations: a red light turning green and traffic approaching a lane closure. 
-* Condition 1: Red light at x = 300 m for 250 frames
-
-::: {style="text-align: center;"}
-
-![Runtime Video](red_light_vid.mp4){height="400px"}
-
-:::
-
-* Condition 2: Bottom lane closed at x = 300 m
-
-::: {style="text-align: center;"}
-![Runtime Video](lane_close_vid.mp4){height="400px"}
-::: -->
+</section>
+<section id="simulation-conditions" class="level2">
+<h2 class="anchored" data-anchor-id="simulation-conditions">Simulation Conditions</h2>
+<p>The goal was to be able to model two common traffic situations: a red light turning green and traffic approaching a lane closure. * Condition 1: Red light at x = 300 m for 250 frames</p>
+<div style="text-align: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="red_light_vid.mp4" height="400" controls=""><a href="red_light_vid.mp4">Video</a></video></p>
+<figcaption>Runtime Video</figcaption>
+</figure>
+</div>
+</div>
+<ul>
+<li>Condition 2: Bottom lane closed at x = 300 m</li>
+</ul>
+<div style="text-align: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="lane_close_vid.mp4" height="400" controls=""><a href="lane_close_vid.mp4">Video</a></video></p>
+<figcaption>Runtime Video</figcaption>
+</figure>
+</div>
+</div>
 </section>
 <section id="methods" class="level2">
 <h2 class="anchored" data-anchor-id="methods">Methods</h2>
 <section id="the-lwr-model" class="level3">
 <h3 class="anchored" data-anchor-id="the-lwr-model">The LWR Model</h3>
-<p>The Lighthill-Whitman-Richards (LWR) model is a 1D approximation of traffic flow that utilizes the conservation equation. #### 1. Reynolds Transport Theorem (RTT) The model begins by applying the Reynolds Transport Theorem to cars to solve in differential form: <span class="math display">\[\frac{dB_{sys}}{dt} = \frac{d}{dt} \int_{CV} \rho \, dV + \int_{CS} \rho (\vec{v} \cdot \vec{n}) \, dA\]</span> #### 2. Conservation of Cars By applying the conservation of cars, the equation simplifies to the fundamental traffic flow PDE: <span class="math display">\[\frac{\partial \rho}{\partial t} + \frac{\partial (\rho v)}{\partial x} = 0\]</span> #### 3. Greenshields Closure To relate velocity (<span class="math inline">\(v\)</span>) and density (<span class="math inline">\(\rho\)</span>), the Greenshields model is applied: <span class="math display">\[v(\rho) = v_{max} \left( 1 - \frac{\rho}{\rho_{max}} \right)\]</span></p>
+<p>The Lighthill-Whitman-Richards (LWR) model is a 1D approximation of traffic flow that utilizes the conservation equation. 1. Reynolds Transport Theorem (RTT) The model begins by applying the Reynolds Transport Theorem to cars to solve in differential form: <span class="math display">\[\frac{dB_{sys}}{dt} = \frac{d}{dt} \int_{CV} \rho \, dV + \int_{CS} \rho (\vec{v} \cdot \vec{n}) \, dA\]</span></p>
+<ol start="2" type="1">
+<li><p>Conservation of Cars By applying the conservation of cars, the equation simplifies to the fundamental traffic flow PDE: <span class="math display">\[\frac{\partial \rho}{\partial t} + \frac{\partial (\rho v)}{\partial x} = 0\]</span></p></li>
+<li><p>Greenshields Closure To relate velocity (<span class="math inline">\(v\)</span>) and density (<span class="math inline">\(\rho\)</span>), the Greenshields model is applied: <span class="math display">\[v(\rho) = v_{max} \left( 1 - \frac{\rho}{\rho_{max}} \right)\]</span></p></li>
+</ol>
 </section>
 <section id="numerical-implementation-solving-the-lwr-model" class="level3">
 <h3 class="anchored" data-anchor-id="numerical-implementation-solving-the-lwr-model">Numerical Implementation: Solving the LWR Model</h3>
-<p>To simulate the model, finite difference methods are used to solve the partial differential equations. #### 1. Lax-Friedrichs Finite Difference (Flux Form) This method is used to handle the forward flux of traffic: <span class="math display">\[\rho_j^{n+1} = \frac{1}{2}(\rho_{j+1}^n + \rho_{j-1}^n) - \frac{\Delta t}{2\Delta x}(f_{j+1}^n - f_{j-1}^n)\]</span> #### 2. Fick’s Law for Inter-lane Diffusion To account for lane merging or sideways movement, Fick’s Law is incorporated: <span class="math display">\[J = -D \frac{\partial \rho}{\partial x}\]</span> #### 3. Fully Formed PDE The final simulation uses a combined PDE featuring both the LWR forward flux and Fick’s Law sideways diffusion: <span class="math display">\[\frac{\partial \rho}{\partial t} + \frac{\partial f(\rho)}{\partial x} = D \frac{\partial^2 \rho}{\partial x^2}\]</span></p>
+<p>To simulate the model, finite difference methods are used to solve the partial differential equations.</p>
+<ol type="1">
+<li><p>Lax-Friedrichs Finite Difference (Flux Form) This method is used to handle the forward flux of traffic: <span class="math display">\[\rho_j^{n+1} = \frac{1}{2}(\rho_{j+1}^n + \rho_{j-1}^n) - \frac{\Delta t}{2\Delta x}(f_{j+1}^n - f_{j-1}^n)\]</span></p></li>
+<li><p>Fick’s Law for Inter-lane Diffusion To account for lane merging or sideways movement, Fick’s Law is incorporated: <span class="math display">\[J = -D \frac{\partial \rho}{\partial x}\]</span></p></li>
+<li><p>Fully Formed PDE The final simulation uses a combined PDE featuring both the LWR forward flux and Fick’s Law sideways diffusion: <span class="math display">\[\frac{\partial \rho}{\partial t} + \frac{\partial f(\rho)}{\partial x} = D \frac{\partial^2 \rho}{\partial x^2}\]</span></p></li>
+</ol>
 </section>
 </section>
 <section id="discussion" class="level2">
