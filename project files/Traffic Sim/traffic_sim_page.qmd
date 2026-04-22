@@ -10,37 +10,39 @@ Traffic engineers sometimes use fluid flow equations to see how traffic can be e
 ## Simulation Conditions
 The goal was to be able to model two common traffic situations: a red light turning green and traffic approaching a lane closure. 
 * Condition 1: Red light at x = 300 m for 250 frames
+
 ::: {style="text-align: center;"}
 ![Runtime Video](red_light_vid.mp4){height="400px"}
 :::
 
 * Condition 2: Bottom lane closed at x = 300 m
+
 ::: {style="text-align: center;"}
 ![Runtime Video](lane_close_vid.mp4){height="400px"}
 :::
 
 ## Methods
-The LWR Model
+### The LWR Model
 The Lighthill-Whitman-Richards (LWR) model is a 1D approximation of traffic flow that utilizes the conservation equation.
-1. Reynolds Transport Theorem (RTT)
+#### 1. Reynolds Transport Theorem (RTT)
 The model begins by applying the Reynolds Transport Theorem to cars to solve in differential form:
 $$\frac{dB_{sys}}{dt} = \frac{d}{dt} \int_{CV} \rho \, dV + \int_{CS} \rho (\vec{v} \cdot \vec{n}) \, dA$$ 
-2. Conservation of Cars 
+#### 2. Conservation of Cars 
 By applying the conservation of cars, the equation simplifies to the fundamental traffic flow PDE:
 $$\frac{\partial \rho}{\partial t} + \frac{\partial (\rho v)}{\partial x} = 0$$ 
-3. Greenshields Closure
+#### 3. Greenshields Closure
 To relate velocity ($v$) and density ($\rho$), the Greenshields model is applied:
 $$v(\rho) = v_{max} \left( 1 - \frac{\rho}{\rho_{max}} \right)$$ 
 
-Numerical Implementation: Solving the LWR Model
+### Numerical Implementation: Solving the LWR Model
 To simulate the model, finite difference methods are used to solve the partial differential equations.
-1. Lax-Friedrichs Finite Difference (Flux Form)
+#### 1. Lax-Friedrichs Finite Difference (Flux Form)
 This method is used to handle the forward flux of traffic:
 $$\rho_j^{n+1} = \frac{1}{2}(\rho_{j+1}^n + \rho_{j-1}^n) - \frac{\Delta t}{2\Delta x}(f_{j+1}^n - f_{j-1}^n)$$
-2. Fick’s Law for Inter-lane Diffusion
+#### 2. Fick’s Law for Inter-lane Diffusion
 To account for lane merging or sideways movement, Fick's Law is incorporated:
 $$J = -D \frac{\partial \rho}{\partial x}$$ 
-3. Fully Formed PDE
+#### 3. Fully Formed PDE
 The final simulation uses a combined PDE featuring both the LWR forward flux and Fick’s Law sideways diffusion:
 $$\frac{\partial \rho}{\partial t} + \frac{\partial f(\rho)}{\partial x} = D \frac{\partial^2 \rho}{\partial x^2}$$
 

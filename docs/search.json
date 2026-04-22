@@ -4,14 +4,42 @@
     "href": "Projects.html",
     "title": "Projects",
     "section": "",
-    "text": "To view each project’s details, click the image.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOwned by Lockheed Martin\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\nView my current portfolio (PDF)"
+    "text": "To view each project’s details, click the image.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOwned by Lockheed Martin\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\nView my current portfolio (PDF)"
   },
   {
     "objectID": "Projects.html#past-projects",
     "href": "Projects.html#past-projects",
     "title": "Projects",
     "section": "",
-    "text": "To view each project’s details, click the image.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOwned by Lockheed Martin\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\nView my current portfolio (PDF)"
+    "text": "To view each project’s details, click the image.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOwned by Lockheed Martin\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\nView my current portfolio (PDF)"
+  },
+  {
+    "objectID": "project files/Spinner/spinner_page.html",
+    "href": "project files/Spinner/spinner_page.html",
+    "title": "Custom Injection Molded Fidget Spinner",
+    "section": "",
+    "text": "For this project, the goal was to design a fidget spinner using SolidWorks that would be able to house bearings in it. From that CAD file we created an FEA analysis, machined a mold of the CAD file, and finally used injection to create the actual fidget spinner that we had designed."
+  },
+  {
+    "objectID": "project files/Spinner/spinner_page.html#project-overview",
+    "href": "project files/Spinner/spinner_page.html#project-overview",
+    "title": "Custom Injection Molded Fidget Spinner",
+    "section": "",
+    "text": "For this project, the goal was to design a fidget spinner using SolidWorks that would be able to house bearings in it. From that CAD file we created an FEA analysis, machined a mold of the CAD file, and finally used injection to create the actual fidget spinner that we had designed."
+  },
+  {
+    "objectID": "project files/Spinner/spinner_page.html#skills-demonstrated",
+    "href": "project files/Spinner/spinner_page.html#skills-demonstrated",
+    "title": "Custom Injection Molded Fidget Spinner",
+    "section": "Skills Demonstrated",
+    "text": "Skills Demonstrated\n\nCAD Modeling\nFEA Analysis\nMachining\nInjection Molding"
+  },
+  {
+    "objectID": "project files/Spinner/spinner_page.html#steps",
+    "href": "project files/Spinner/spinner_page.html#steps",
+    "title": "Custom Injection Molded Fidget Spinner",
+    "section": "Steps",
+    "text": "Steps\n\nCreate a model of the proposed spinner body and the bearing caps to go with it  \nCreate a model of the mold  \nCreate an FEA analysis assuming that the spinner was dropped from 2 meters \nMachine the mold (at this point the group voted on a design to all use, hence the change in design from hereon in) \nUse an injection to create the spinner, and input the bearings \n\nView the complete report here"
   },
   {
     "objectID": "project files/Robot/robot_page.html",
@@ -102,7 +130,7 @@
     "href": "AboutMe.html",
     "title": "About Me",
     "section": "",
-    "text": "Hi! I’m Zander Gonzales: problem solving engineer, student TA, and lover of 3D modeling. I am currently a Junior studying Mechanical Engineering at Brigham Young University. Hopefully you like my website!"
+    "text": "Hi! I’m Zander Gonzales: problem solving engineer, student TA, and lover of computational modeling. I am currently a Junior studying Mechanical Engineering at Brigham Young University. Hopefully you like my website!"
   },
   {
     "objectID": "AboutMe.html#education",
@@ -210,46 +238,18 @@
     "text": "Discussion\nThe application of the SIR (Susceptible-Infected-Recovered) model demonstrated a high degree of accuracy in tracking the 2023-2024 influenza season for both Chicago and Los Angeles. As illustrated in the results, the optimized model closely tracks the peak and duration of the infection curves. The effectiveness of the model relied heavily on the optimization of the transmission rate (β) and recovery rate (Ɣ). The use of a Mean Squared Error (MSE) function allowed for the quantification of fit quality, and the generation of a contour map confirmed the existence of a global minimum. This suggests that for a specific strain and location, distinct and constant values for transmissibility and recovery can reasonably approximate the complex dynamics of a flu season, and this could be used in a predictive manner to help hospitals know when and how to prepare around flu season.\nView the complete report here"
   },
   {
-    "objectID": "project files/Spinner/spinner_page.html",
-    "href": "project files/Spinner/spinner_page.html",
-    "title": "Custom Injection Molded Fidget Spinner",
-    "section": "",
-    "text": "For this project, the goal was to design a fidget spinner using SolidWorks that would be able to house bearings in it. From that CAD file we created an FEA analysis, machined a mold of the CAD file, and finally used injection to create the actual fidget spinner that we had designed."
-  },
-  {
-    "objectID": "project files/Spinner/spinner_page.html#project-overview",
-    "href": "project files/Spinner/spinner_page.html#project-overview",
-    "title": "Custom Injection Molded Fidget Spinner",
-    "section": "",
-    "text": "For this project, the goal was to design a fidget spinner using SolidWorks that would be able to house bearings in it. From that CAD file we created an FEA analysis, machined a mold of the CAD file, and finally used injection to create the actual fidget spinner that we had designed."
-  },
-  {
-    "objectID": "project files/Spinner/spinner_page.html#skills-demonstrated",
-    "href": "project files/Spinner/spinner_page.html#skills-demonstrated",
-    "title": "Custom Injection Molded Fidget Spinner",
-    "section": "Skills Demonstrated",
-    "text": "Skills Demonstrated\n\nCAD Modeling\nFEA Analysis\nMachining\nInjection Molding"
-  },
-  {
-    "objectID": "project files/Spinner/spinner_page.html#steps",
-    "href": "project files/Spinner/spinner_page.html#steps",
-    "title": "Custom Injection Molded Fidget Spinner",
-    "section": "Steps",
-    "text": "Steps\n\nCreate a model of the proposed spinner body and the bearing caps to go with it  \nCreate a model of the mold  \nCreate an FEA analysis assuming that the spinner was dropped from 2 meters \nMachine the mold (at this point the group voted on a design to all use, hence the change in design from hereon in) \nUse an injection to create the spinner, and input the bearings \n\nView the complete report here"
-  },
-  {
     "objectID": "project files/Scrappy/scrappy_page.html",
     "href": "project files/Scrappy/scrappy_page.html",
     "title": "Fully Autonomous Mechatronics Rover",
     "section": "",
-    "text": "The goal of the rover was to autonomously complete a track that contained 5 different tasks at random locations around the course using.\n\n\n\n\n\n\n\nAn early iteration of our rover"
+    "text": "The goal of the rover was to autonomously complete a track that contained 5 different tasks at random locations around the course using.\n\n\n\n\nAn early iteration of our rover"
   },
   {
     "objectID": "project files/Scrappy/scrappy_page.html#project-overview",
     "href": "project files/Scrappy/scrappy_page.html#project-overview",
     "title": "Fully Autonomous Mechatronics Rover",
     "section": "",
-    "text": "The goal of the rover was to autonomously complete a track that contained 5 different tasks at random locations around the course using.\n\n\n\n\n\n\n\nAn early iteration of our rover"
+    "text": "The goal of the rover was to autonomously complete a track that contained 5 different tasks at random locations around the course using.\n\n\n\n\nAn early iteration of our rover"
   },
   {
     "objectID": "project files/Scrappy/scrappy_page.html#tasks",
@@ -263,6 +263,34 @@
     "href": "project files/Scrappy/scrappy_page.html#course-completion-run",
     "title": "Fully Autonomous Mechatronics Rover",
     "section": "Course Completion Run",
-    "text": "Course Completion Run"
+    "text": "Course Completion Run\n Runtime Video"
+  },
+  {
+    "objectID": "project files/Traffic Sim/traffic_sim_page.html",
+    "href": "project files/Traffic Sim/traffic_sim_page.html",
+    "title": "Creating a Traffic Model Using Fluid Flow Equations",
+    "section": "",
+    "text": "Traffic engineers sometimes use fluid flow equations to see how traffic can be expected to flow at a macro level. By solving the Reynold’s Transport Theorem with respect to desnity of cars we created an equation that can approximate forward movement of traffic along a closed stretch of road. We then used Fick’s Law to create a diffusion equation to show how traffic will flow from lanes with greater density to lanes with less density."
+  },
+  {
+    "objectID": "project files/Traffic Sim/traffic_sim_page.html#project-overview",
+    "href": "project files/Traffic Sim/traffic_sim_page.html#project-overview",
+    "title": "Creating a Traffic Model Using Fluid Flow Equations",
+    "section": "",
+    "text": "Traffic engineers sometimes use fluid flow equations to see how traffic can be expected to flow at a macro level. By solving the Reynold’s Transport Theorem with respect to desnity of cars we created an equation that can approximate forward movement of traffic along a closed stretch of road. We then used Fick’s Law to create a diffusion equation to show how traffic will flow from lanes with greater density to lanes with less density."
+  },
+  {
+    "objectID": "project files/Traffic Sim/traffic_sim_page.html#methods",
+    "href": "project files/Traffic Sim/traffic_sim_page.html#methods",
+    "title": "Creating a Traffic Model Using Fluid Flow Equations",
+    "section": "Methods",
+    "text": "Methods\n\nThe LWR Model\nThe Lighthill-Whitman-Richards (LWR) model is a 1D approximation of traffic flow that utilizes the conservation equation. #### 1. Reynolds Transport Theorem (RTT) The model begins by applying the Reynolds Transport Theorem to cars to solve in differential form: \\[\\frac{dB_{sys}}{dt} = \\frac{d}{dt} \\int_{CV} \\rho \\, dV + \\int_{CS} \\rho (\\vec{v} \\cdot \\vec{n}) \\, dA\\] #### 2. Conservation of Cars By applying the conservation of cars, the equation simplifies to the fundamental traffic flow PDE: \\[\\frac{\\partial \\rho}{\\partial t} + \\frac{\\partial (\\rho v)}{\\partial x} = 0\\] #### 3. Greenshields Closure To relate velocity (\\(v\\)) and density (\\(\\rho\\)), the Greenshields model is applied: \\[v(\\rho) = v_{max} \\left( 1 - \\frac{\\rho}{\\rho_{max}} \\right)\\]\n\n\nNumerical Implementation: Solving the LWR Model\nTo simulate the model, finite difference methods are used to solve the partial differential equations. #### 1. Lax-Friedrichs Finite Difference (Flux Form) This method is used to handle the forward flux of traffic: \\[\\rho_j^{n+1} = \\frac{1}{2}(\\rho_{j+1}^n + \\rho_{j-1}^n) - \\frac{\\Delta t}{2\\Delta x}(f_{j+1}^n - f_{j-1}^n)\\] #### 2. Fick’s Law for Inter-lane Diffusion To account for lane merging or sideways movement, Fick’s Law is incorporated: \\[J = -D \\frac{\\partial \\rho}{\\partial x}\\] #### 3. Fully Formed PDE The final simulation uses a combined PDE featuring both the LWR forward flux and Fick’s Law sideways diffusion: \\[\\frac{\\partial \\rho}{\\partial t} + \\frac{\\partial f(\\rho)}{\\partial x} = D \\frac{\\partial^2 \\rho}{\\partial x^2}\\]"
+  },
+  {
+    "objectID": "project files/Traffic Sim/traffic_sim_page.html#discussion",
+    "href": "project files/Traffic Sim/traffic_sim_page.html#discussion",
+    "title": "Creating a Traffic Model Using Fluid Flow Equations",
+    "section": "Discussion",
+    "text": "Discussion\nAs can be seen by the videos of the simulation above, the equations we created are able to basically simulate what we would expect to happen in traffic. As traffic approaches the red light we see a shockwave propagate backwards as traffic density increases, and we then see a rarefraction wave move forward as it turns green, with the high density band moving backwards. In the lane closure conditions we can see denisty pile up behind the closed lane, and that dense region slowly piling outwards to the other lanes. That the simulation can model what we would expect to happen gives us confidence that the equations we used are reasonable in the situation."
   }
 ]
