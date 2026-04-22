@@ -221,19 +221,20 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="methods">Methods</h2>
 <section id="the-lwr-model" class="level3">
 <h3 class="anchored" data-anchor-id="the-lwr-model">The LWR Model</h3>
-<p>The Lighthill-Whitman-Richards (LWR) model is a 1D approximation of traffic flow that utilizes the conservation equation. 1. Reynolds Transport Theorem (RTT) The model begins by applying the Reynolds Transport Theorem to cars to solve in differential form: <span class="math display">\[\frac{dB_{sys}}{dt} = \frac{d}{dt} \int_{CV} \rho \, dV + \int_{CS} \rho (\vec{v} \cdot \vec{n}) \, dA\]</span></p>
-<ol start="2" type="1">
-<li><p>Conservation of Cars By applying the conservation of cars, the equation simplifies to the fundamental traffic flow PDE: <span class="math display">\[\frac{\partial \rho}{\partial t} + \frac{\partial (\rho v)}{\partial x} = 0\]</span></p></li>
-<li><p>Greenshields Closure To relate velocity (<span class="math inline">\(v\)</span>) and density (<span class="math inline">\(\rho\)</span>), the Greenshields model is applied: <span class="math display">\[v(\rho) = v_{max} \left( 1 - \frac{\rho}{\rho_{max}} \right)\]</span></p></li>
+<p>The Lighthill-Whitman-Richards (LWR) model is a 1D approximation of traffic flow that utilizes the conservation equation.</p>
+<ol type="1">
+<li><p>Reynolds Transport Theorem (RTT): The model begins by applying the Reynolds Transport Theorem to cars to solve in differential form <span class="math display">\[\frac{dB_{sys}}{dt} = \frac{d}{dt} \int_{CV} \rho \, dV + \int_{CS} \rho (\vec{v} \cdot \vec{n}) \, dA\]</span></p></li>
+<li><p>Conservation of Cars: By applying the conservation of cars, the equation simplifies to the fundamental traffic flow PDE <span class="math display">\[\frac{\partial \rho}{\partial t} + \frac{\partial (\rho v)}{\partial x} = 0\]</span></p></li>
+<li><p>Greenshields Closure: To relate velocity (<span class="math inline">\(v\)</span>) and density (<span class="math inline">\(\rho\)</span>), the Greenshields model is applied <span class="math display">\[v(\rho) = v_{max} \left( 1 - \frac{\rho}{\rho_{max}} \right)\]</span></p></li>
 </ol>
 </section>
 <section id="numerical-implementation-solving-the-lwr-model" class="level3">
 <h3 class="anchored" data-anchor-id="numerical-implementation-solving-the-lwr-model">Numerical Implementation: Solving the LWR Model</h3>
 <p>To simulate the model, finite difference methods are used to solve the partial differential equations.</p>
 <ol type="1">
-<li><p>Lax-Friedrichs Finite Difference (Flux Form) This method is used to handle the forward flux of traffic: <span class="math display">\[\rho_j^{n+1} = \frac{1}{2}(\rho_{j+1}^n + \rho_{j-1}^n) - \frac{\Delta t}{2\Delta x}(f_{j+1}^n - f_{j-1}^n)\]</span></p></li>
-<li><p>Fick’s Law for Inter-lane Diffusion To account for lane merging or sideways movement, Fick’s Law is incorporated: <span class="math display">\[J = -D \frac{\partial \rho}{\partial x}\]</span></p></li>
-<li><p>Fully Formed PDE The final simulation uses a combined PDE featuring both the LWR forward flux and Fick’s Law sideways diffusion: <span class="math display">\[\frac{\partial \rho}{\partial t} + \frac{\partial f(\rho)}{\partial x} = D \frac{\partial^2 \rho}{\partial x^2}\]</span></p></li>
+<li><p>Lax-Friedrichs Finite Difference (Flux Form): This method is used to handle the forward flux of traffic <span class="math display">\[\rho_j^{n+1} = \frac{1}{2}(\rho_{j+1}^n + \rho_{j-1}^n) - \frac{\Delta t}{2\Delta x}(f_{j+1}^n - f_{j-1}^n)\]</span></p></li>
+<li><p>Fick’s Law: To account for lane merging or sideways movement, Fick’s Law is incorporated <span class="math display">\[J = -D \frac{\partial \rho}{\partial x}\]</span></p></li>
+<li><p>Fully Formed PDE: The final simulation uses a combined PDE featuring both the LWR forward flux and Fick’s Law sideways diffusion <span class="math display">\[\frac{\partial \rho}{\partial t} + \frac{\partial f(\rho)}{\partial x} = D \frac{\partial^2 \rho}{\partial x^2}\]</span></p></li>
 </ol>
 </section>
 </section>

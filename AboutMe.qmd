@@ -11,7 +11,7 @@ Hi! I’m **Zander Gonzales**: problem solving engineer, student TA, and lover o
 
 * **Bachelor of Science:** Mechanical Engineering, *Brigham Young University*
     * GPA 3.78
-    * Coursework: Computational Methods, Materials Science, Thermodynamics, Computer Aided Design, Dynamic Systems Modeling, Elements of Electrical Engineering
+    * Coursework: Mechatronics, Heat Transfer, Fluid Mechanics, Computational Methods, Materials Science, Thermodynamics, Computer Aided Design, Dynamic Systems Modeling, Elements of Electrical Engineering
 
 * **Minor in Philosophy:** Focus in formal logic and epistemology
 
